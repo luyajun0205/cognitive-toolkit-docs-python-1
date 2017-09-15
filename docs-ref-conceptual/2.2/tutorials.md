@@ -60,7 +60,7 @@ ms.service: cognitive-toolkit
      CNTK 207: [Training with Sampled Softmax](https://github.com/Microsoft/CNTK/blob/master/Tutorials/CNTK_207_Training_with_Sampled_Softmax.ipynb)
 
 1.  **_Training with Connectionist Temporal Classification_**<br>
-     CNTK 208: [Training with Connectionist Temporal Classification](https://github.com/Microsoft/CNTK/blob/master/Tutorials/CNTK_208_Speech_Connectionist_Temporal_Classification)
+     CNTK 208: [Training with Connectionist Temporal Classification](https://github.com/Microsoft/CNTK/blob/master/Tutorials/CNTK_208_Speech_Connectionist_Temporal_Classification.ipynb)
 
 1.  **_Recognize flowers and animals in natural scene images using deep transfer learning_**<br>
      CNTK 301: [Deep transfer learning with pre-trained ResNet model](https://github.com/Microsoft/CNTK/blob/master/Tutorials/CNTK_301_Image_Recognition_with_Deep_Transfer_Learning.ipynb)
