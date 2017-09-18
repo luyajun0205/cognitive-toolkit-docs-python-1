@@ -4,7 +4,7 @@ skip_tags: true
 environment:
   PYTHON: "c:/projects/Anaconda3-4.1.1-Windows-x86_64"
   SPHINXBUILD: "%PYTHON%/scripts/sphinx-build.exe"
-  WHLPATH: "https://cntk.ai/PythonWheel/CPU-Only/cntk-2.1-cp35-cp35m-win_amd64.whl"
+  WHLPATH: "https://cntk.ai/PythonWheel/CPU-Only/cntk-2.0-cp35-cp35m-win_amd64.whl"
 
   github_access_token:
     secure: DpN0M7pZDocpyv+muc15qHDKz9lMJ7Zr34aMC0HtOdeVkbTERuKkxq4WHAd3S33v
