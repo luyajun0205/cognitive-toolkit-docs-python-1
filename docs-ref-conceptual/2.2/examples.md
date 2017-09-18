@@ -1,6 +1,6 @@
 ---
 title: Examples
-ms.date: 05/31/2017
+ms.date: 09/15/2017
 ms.topic: conceptual
 ms.service: cognitive-toolkit
 ---
