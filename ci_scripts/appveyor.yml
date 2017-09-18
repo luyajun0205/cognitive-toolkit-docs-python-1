@@ -51,7 +51,7 @@ on_finish:
 
     # generate rst files and build
     - echo %PATH%
-    - set PATH = c:/projects/Anaconda3-4.1.1-Windows-x86_64/scripts;%PATH%
+    - set PATH=c:\projects\Anaconda3-4.1.1-Windows-x86_64\scripts;%PATH%
     - echo %PATH%
     - cd c:\projects\cntk\bindings\python\doc
     - call build.bat
