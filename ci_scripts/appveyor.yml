@@ -2,18 +2,21 @@ version: 1.0.{build}
 skip_tags: true
 
 environment:
-  PYTHON: "C:/Python35"
+  PYTHON: "c:/projects/Anaconda3-4.1.1-Windows-x86_64"
   SPHINXBUILD: "%PYTHON%/scripts/sphinx-build.exe"
   WHLPATH: "https://cntk.ai/PythonWheel/CPU-Only/cntk-2.1-cp35-cp35m-win_amd64.whl"
-  
+
   github_access_token:
     secure: DpN0M7pZDocpyv+muc15qHDKz9lMJ7Zr34aMC0HtOdeVkbTERuKkxq4WHAd3S33v
 
 init:
-    - "%PYTHON%/python.exe -V"
     - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+    - ps: (New-Object System.Net.WebClient).DownloadFile("https://repo.continuum.io/archive/Anaconda3-4.1.1-Windows-x86_64.exe", "c:\projects\Anaconda3-4.1.1-Windows-x86_64.exe")
+    - start /wait c:\projects\Anaconda3-4.1.1-Windows-x86_64.exe /S /D=c:\projects\Anaconda3-4.1.1-Windows-x86_64
+
+    - "%PYTHON%/python.exe -V"
     - "%PYTHON%/python.exe -m pip --version"
-    - "%PYTHON%/python.exe -m pip install --upgrade pip"
 
     # Install sphinx (1.5.5) and its extensions
     - "%PYTHON%/python.exe -m pip install sphinx==1.5.5"
@@ -26,28 +29,26 @@ clone_script:
     - git config --global core.autocrlf true
     - git config core.autocrlf
     
-    - ps: (New-Object System.Net.WebClient).DownloadFile("https://repo.continuum.io/archive/Anaconda3-4.1.1-Windows-x86_64.exe", "c:\projects\Anaconda3-4.1.1-Windows-x86_64.exe")
-    - start /wait c:\projects\Anaconda3-4.1.1-Windows-x86_64.exe /S /D=c:\projects\Anaconda3-4.1.1-Windows-x86_64
-    - "c:/projects/Anaconda3-4.1.1-Windows-x86_64/python.exe -m pip --version"
-    # call c:\projects\Anaconda3-4.1.1-Windows-x86_64.exe /AddToPath=0 /S /D=%ANACONDAPATH%
-    
     # get cntk 2.1 whl file
     # mkdir c:\projects\source
     # ps: (New-Object System.Net.WebClient).DownloadFile("https://cntk.ai/PythonWheel/CPU-Only/cntk-2.1-cp35-cp35m-win_amd64.whl", "c:\projects\source\cntk-2.1-cp35-cp35m-win_amd64.whl")
     
     # get cntk 
     - cd c:\projects
-    # git clone -q --branch=%SOURCE_REPO_BRANCH% https://github.com/Microsoft/CNTK.git
+    - git clone -q --branch=%SOURCE_REPO_BRANCH% https://github.com/Microsoft/CNTK.git
  
     # get MicrosoftDocs/cognitive-toolkit-docs-python
     - cd c:\projects
-    # git clone -q --branch=%PROCESS_REPO_BRANCH% https://github.com/MicrosoftDocs/cognitive-toolkit-docs-python.git
+    - git clone -q --branch=%PROCESS_REPO_BRANCH% https://github.com/MicrosoftDocs/cognitive-toolkit-docs-python.git
 
 build: off
 
 test: off
 
 on_finish:
-    # if want to RDP, uncomment below command
-    - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+    - "%PYTHON%/python.exe -m pip install %WHLPATH%"
+    - ps: Copy-Item c:/projects/cognitive-toolkit-docs-python/ci_scripts/conf.py -Destination c:/projects/cntk/bindings/python/doc/conf.py -force
 
+    
+
+  
