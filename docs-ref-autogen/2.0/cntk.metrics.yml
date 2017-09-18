@@ -18,9 +18,6 @@ items:
       path: bindings/python/cntk\metrics\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 0
-  summary: 'Evaluation metrics.
-
-    '
   type: package
   uid: cntk.metrics
 - example:
@@ -72,7 +69,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 61
+    startLine: 59
   summary: 'This operation computes the classification error. It finds the index of
     the highest
 
@@ -146,7 +143,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 100
+    startLine: 98
   summary: 'Edit distance error evaluation node with the option of specifying penalty
     of substitution, deletion and insertion, as well as squashing the input sequences
     and ignoring certain samples.
@@ -275,7 +272,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 15
+    startLine: 13
   summary: 'Groups samples according to `group`, sorts
 
     them within each group based on `output` and

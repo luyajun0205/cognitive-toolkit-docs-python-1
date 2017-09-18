@@ -17,7 +17,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\tensor.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 14
+    startLine: 10
   summary: 'This class defines math overloads so that CNTK nodes can be written in
     math
 

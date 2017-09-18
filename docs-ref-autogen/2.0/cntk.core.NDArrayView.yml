@@ -24,7 +24,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\core.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 33
+    startLine: 26
   summary: 'Creates an empty dense internal data representation of a
 
     @cntk.core.Value object.
@@ -121,7 +121,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 89
+    startLine: 82
   summary: 'Create an @cntk.core.NDArrayView instance from a SciPy sparse array in
     CSR
 
@@ -195,7 +195,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 140
+    startLine: 133
   summary: 'Create an @cntk.core.NDArrayView instance from a NumPy or SciPy sparse
 
     array in CSR format.
@@ -253,7 +253,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 56
+    startLine: 49
   summary: 'Create an @cntk.core.NDArrayView instance from a NumPy array.
 
     '
@@ -375,7 +375,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 183
+    startLine: 176
   summary: 'Returns a sliced view of the instance.
 
     '

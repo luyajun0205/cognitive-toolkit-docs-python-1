@@ -26,7 +26,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\variables.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 424
+    startLine: 419
   summary: 'A constant value. It can be a scalar, vector, matrix, or tensor
 
     of floating point numbers that cannot be modified.

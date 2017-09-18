@@ -23,9 +23,6 @@ items:
       path: bindings/python/cntk\random\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 0
-  summary: 'Functions that generate random numbers with respect to designated distributions.
-
-    '
   type: package
   uid: cntk.random
 - example:
@@ -45,7 +42,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 105
+    startLine: 101
   summary: 'Generates samples from the Bernoulli distribution with success probability
     *mean*.
 
@@ -110,7 +107,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 229
+    startLine: 225
   summary: 'Generates samples from the Bernoulli distribution with success probability
     *mean*.
 
@@ -167,7 +164,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 74
+    startLine: 70
   summary: 'Generates samples from the Gumbel distribution with location *loc* and
     scale *scale*.
 
@@ -242,7 +239,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 192
+    startLine: 188
   summary: 'Generates samples from the Gumbel distribution with location *loc* and
     scale *scale*.
 
@@ -303,7 +300,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 47
+    startLine: 43
   summary: 'Generates samples from the normal distribution with mean *mean* and standard
     deviation *scale*.
 
@@ -376,7 +373,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 160
+    startLine: 156
   summary: 'Generates samples from the normal distribution with mean *mean* and standard
     deviation *scale*.
 
@@ -437,7 +434,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 19
+    startLine: 15
   summary: 'Generates samples from the uniform distribution in the interval [*low*,`high`).
 
     '
@@ -507,7 +504,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 131
+    startLine: 127
   summary: 'Generates samples from the uniform distribution in the interval [*low*,`high`).
 
     '

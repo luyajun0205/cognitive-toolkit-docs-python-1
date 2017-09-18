@@ -17,9 +17,6 @@ items:
       path: bindings/python/cntk\tensor.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 0
-  summary: 'Tensor operations.
-
-    '
   type: module
   uid: cntk.tensor
 references:

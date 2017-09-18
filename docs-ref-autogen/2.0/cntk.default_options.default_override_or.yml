@@ -17,7 +17,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\default_options.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 55
+    startLine: 49
   syntax:
     content: default_override_or(value)
   type: class

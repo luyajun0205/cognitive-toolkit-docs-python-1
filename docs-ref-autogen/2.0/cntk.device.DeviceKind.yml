@@ -21,7 +21,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\device.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 15
+    startLine: 13
   summary: 'Describes different device kinds like CPU or GPU.
 
 

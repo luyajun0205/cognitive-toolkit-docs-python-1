@@ -29,7 +29,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 131
+    startLine: 130
   summary: 'Base class of Crosstalk.
 
     Please refer to crosstalk unittests for examples of how to exchange/compare values
@@ -65,40 +65,21 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 203
-  summary: 'Set value to var, with option to load from working directory
+    startLine: 183
+  summary: 'Set value to var, with option to load from work_dir
 
     '
   syntax:
     content: assign(name, value=None, load=False, load_name=None)
     parameters:
-    - description: 'Name of the variable to assign
-
-        '
-      id: name
-      type:
-      - str
+    - id: self
+    - id: name
     - defaultValue: None
-      description: 'Numpy ndarray of dict of numpy ndarray data to assign to the variable
-
-        '
       id: value
     - defaultValue: 'False'
-      description: 'True to Load the data from working directory with the matching
-        name, instead of using value. value has to be None when load=True
-
-        '
       id: load
-      type:
-      - bool
     - defaultValue: None
-      description: 'None to load data with the same name, otherwise load with overrided
-        load_name
-
-        '
       id: load_name
-      type:
-      - str
   type: method
   uid: cntk.contrib.crosstalk.Crosstalk.assign
 - class: cntk.contrib.crosstalk.Crosstalk
@@ -114,47 +95,24 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 242
-  summary: 'Compare var with name to value in file in working directory
+    startLine: 219
+  summary: 'Compare var with name to value in file in work_dir. Specify compare_name
+    if the file to compare is with a different name of var.
 
     '
   syntax:
     content: compare(name, compare_name=None, rtol=1e-05, atol=1e-08, equal_nan=False)
     parameters:
-    - description: 'Name of the variable to compare
-
-        '
-      id: name
-      type:
-      - str
+    - id: self
+    - id: name
     - defaultValue: None
-      description: 'Compare to file with compare_name if specified
-
-        '
       id: compare_name
-      type:
-      - str
     - defaultValue: 1e-05
-      description: 'The relative tolerance parameter, as in numpy.isclose()
-
-        '
       id: rtol
-      type:
-      - float
     - defaultValue: 1e-08
-      description: 'The absolute tolerance parameter, as in numpy.isclose()
-
-        '
       id: atol
-      type:
-      - float
     - defaultValue: 'False'
-      description: 'Whether to compare NaNs as equal, as in numpy.isclose()
-
-        '
       id: equal_nan
-      type:
-      - bool
   type: method
   uid: cntk.contrib.crosstalk.Crosstalk.compare
 - class: cntk.contrib.crosstalk.Crosstalk
@@ -170,26 +128,17 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 224
-  summary: 'Fetch/evaluate var with name and optionally save to working directory
+    startLine: 205
+  summary: 'Evaluate var with name and optionally save to work_dir
 
     '
   syntax:
     content: fetch(name, save=False)
     parameters:
-    - description: 'Name of the variable to fetch
-
-        '
-      id: name
-      type:
-      - str
+    - id: self
+    - id: name
     - defaultValue: 'False'
-      description: 'Save the data to working directory
-
-        '
       id: save
-      type:
-      - bool
   type: method
   uid: cntk.contrib.crosstalk.Crosstalk.fetch
 - class: cntk.contrib.crosstalk.Crosstalk
@@ -205,17 +154,15 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 277
-  summary: 'Load variables in list of names
+    startLine: 247
+  summary: 'Load vars in list of names
 
     '
   syntax:
     content: load(names)
     parameters:
-    - description: 'List of *str* of variable names to load
-
-        '
-      id: names
+    - id: self
+    - id: names
   type: method
   uid: cntk.contrib.crosstalk.Crosstalk.load
 - class: cntk.contrib.crosstalk.Crosstalk
@@ -231,23 +178,15 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 185
-  summary: 'Load raw value from npy|pkl file in working directory
+    startLine: 171
+  summary: 'Load raw value from npy|pkl file in work_dir
 
     '
   syntax:
     content: load_raw_value(name)
     parameters:
-    - description: 'Name of the file to load
-
-        '
-      id: name
-      type:
-      - str
-    return:
-      description: 'loaded data in numpy ndarray or dict of numpy ndarray
-
-        '
+    - id: self
+    - id: name
   type: method
   uid: cntk.contrib.crosstalk.Crosstalk.load_raw_value
 - class: cntk.contrib.crosstalk.Crosstalk
@@ -263,7 +202,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 151
+    startLine: 147
   summary: 'Bump up passes so save won''t overwrite existing files
 
     '
@@ -286,26 +225,18 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 171
-  summary: 'Register setter/getter functions for a given variable type
+    startLine: 162
+  summary: 'Register setter/getter functions for var_type
 
     '
   syntax:
     content: register_funcs(var_type, setter=None, getter=None)
     parameters:
-    - description: 'Type of the variable
-
-        '
-      id: var_type
+    - id: self
+    - id: var_type
     - defaultValue: None
-      description: 'Lambda function to set value
-
-        '
       id: setter
     - defaultValue: None
-      description: 'Lambda function to get value
-
-        '
       id: getter
   type: method
   uid: cntk.contrib.crosstalk.Crosstalk.register_funcs
@@ -322,9 +253,8 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 301
-  summary: 'Reset all variables and passes, setter/getter functions for variable types
-    are kept
+    startLine: 265
+  summary: 'Reset all vars and passes, setter/getter are kept
 
     '
   syntax:
@@ -346,17 +276,15 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 286
-  summary: 'Save variables in list of names
+    startLine: 253
+  summary: 'Save vars in list
 
     '
   syntax:
     content: save(names)
     parameters:
-    - description: 'List of *str* of variable names to save
-
-        '
-      id: names
+    - id: self
+    - id: names
   type: method
   uid: cntk.contrib.crosstalk.Crosstalk.save
 - class: cntk.contrib.crosstalk.Crosstalk
@@ -372,8 +300,8 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 295
-  summary: 'Save all variables
+    startLine: 259
+  summary: 'Save all vars
 
     '
   syntax:
@@ -395,7 +323,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 140
+    startLine: 139
   summary: 'Set up a working directory for save/load numpy values(.npy) or python
     data (.pkl)
 
@@ -403,12 +331,8 @@ items:
   syntax:
     content: set_workdir(dir)
     parameters:
-    - description: 'Working directory
-
-        '
-      id: dir
-      type:
-      - str
+    - id: self
+    - id: dir
   type: method
   uid: cntk.contrib.crosstalk.Crosstalk.set_workdir
 - class: cntk.contrib.crosstalk.Crosstalk
@@ -424,34 +348,21 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 157
-  summary: 'Add variables to watch with a unique name.
+    startLine: 153
+  summary: 'Add variables to watch with a unique name
+
+    File in working directory would be named <pass>_<name>.(npy|pkl)
 
     '
   syntax:
     content: watch(var, name, var_type=None, attr=None)
     parameters:
-    - description: 'Variable to watch. The type is toolkit specific
-
-        '
-      id: var
-    - description: 'A unique name of the watched variable
-
-        '
-      id: name
-      type:
-      - str
+    - id: self
+    - id: var
+    - id: name
     - defaultValue: None
-      description: 'Variable type for set/get value callback. would be type of var
-        if None is specified
-
-        '
       id: var_type
     - defaultValue: None
-      description: 'attributes for the variable that would be used when getting/setting
-        values. Could be one of Conv2DAttr/EmbedAttr/RnnAttr
-
-        '
       id: attr
   type: method
   uid: cntk.contrib.crosstalk.Crosstalk.watch

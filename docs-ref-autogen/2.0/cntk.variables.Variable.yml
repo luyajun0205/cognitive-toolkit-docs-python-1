@@ -24,7 +24,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\variables.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 283
+    startLine: 278
   summary: 'Denotes a symbolic entity corresponding to the inputs and outputs of a
     Function.
 
@@ -94,7 +94,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 321
+    startLine: 316
   summary: 'Converts this instance into a @cntk.variables.Constant
 
     '
@@ -115,7 +115,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 311
+    startLine: 306
   summary: 'Converts this instance into a @cntk.variables.Parameter
 
     '

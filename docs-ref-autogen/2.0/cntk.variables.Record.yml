@@ -22,7 +22,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\variables.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 16
+    startLine: 11
   summary: 'Easy construction of a record (=immutable singleton class) from keyword
     arguments.
 
@@ -58,7 +58,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\variables.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 42
+    startLine: 37
   summary: 'Create a new Record from an existing one with members modified or added.
 
     '

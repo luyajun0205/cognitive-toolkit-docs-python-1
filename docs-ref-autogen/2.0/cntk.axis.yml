@@ -16,9 +16,6 @@ items:
       path: bindings/python/cntk\axis.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 0
-  summary: 'Axis for CNTK variables on data binding.
-
-    '
   type: module
   uid: cntk.axis
 references:

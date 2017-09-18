@@ -2,29 +2,29 @@
 api_name: []
 items:
 - children: []
-  class: cntk.contrib.crosstalk.Conv2DAttr
-  fullName: cntk.contrib.crosstalk.Conv2DAttr
+  class: cntk.contrib.crosstalk.VarInfo
+  fullName: cntk.contrib.crosstalk.VarInfo
   inheritance:
   - inheritance:
     - inheritance:
       - type: builtins.object
       type: builtins.tuple
-    type: cntk.contrib.crosstalk.Conv2DAttr
+    type: cntk.contrib.crosstalk.VarInfo
   langs:
   - python
   module: cntk.contrib.crosstalk
-  name: Conv2DAttr
+  name: VarInfo
   source:
-    id: Conv2DAttr
+    id: VarInfo
     path: bindings/python/cntk\contrib\crosstalk\__init__.py
     remote:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 41
-  summary: "Attribute for Conv2D variable\n\nfilter_shape\n   The filter shape\n\n\
-    num_filters\n   Number of filters\n"
+    startLine: 17
+  summary: "Variable information\n\nvar\n   The variable object\n\ntype\n   The type\
+    \ of the variable object\n\nattr\n   The attributes for variable setter/getter\n"
   syntax: {}
   type: class
-  uid: cntk.contrib.crosstalk.Conv2DAttr
+  uid: cntk.contrib.crosstalk.VarInfo
 references: []

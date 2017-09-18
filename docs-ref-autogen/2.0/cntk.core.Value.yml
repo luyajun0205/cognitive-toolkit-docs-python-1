@@ -27,7 +27,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\core.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 241
+    startLine: 234
   summary: 'Internal representation of minibatch data.
 
 
@@ -88,7 +88,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\core.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 277
+    startLine: 270
   summary: 'Convert a Value to a sequence of NumPy arrays that have their masked
 
     entries removed.
@@ -124,7 +124,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 363
+    startLine: 356
   summary: 'Creates a @cntk.core.Value object.
 
     '
@@ -368,7 +368,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 469
+    startLine: 462
   summary: 'Converts `batch` into a @cntk.core.Value object of `dtype`
 
     such that the integer data in `batch` is interpreted as the indices

@@ -19,7 +19,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\learners\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 114
+    startLine: 110
   summary: 'Abstraction for learning a subset of parameters of a learnable function
     using first order gradient values.
 
@@ -52,7 +52,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\learners\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 163
+    startLine: 159
   summary: 'Current learning rate schedule.
 
     '
@@ -95,7 +95,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\learners\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 149
+    startLine: 145
   summary: 'Resets the learning rate. The new schedule is adjusted to be relative
 
     to the current number of elapsed samples/sweeps: the 0 offset in
@@ -131,7 +131,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\learners\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 123
+    startLine: 119
   summary: 'Update the parameters associated with this learner.
 
     '
