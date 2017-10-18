@@ -226,17 +226,15 @@ items:
         '
       id: x
       type:
-      - 'numpy.array or @cntk.ops.functions.Function
-
-        '
+      - numpy.array
+      - cntk.ops.functions.Function
     - description: 'axis along which the reduction will be performed
 
         '
       id: axis
       type:
-      - 'int or @cntk.axis.Axis
-
-        '
+      - int
+      - cntk.axis.Axis
     - description: 'the name of the Function instance in the network
 
         '
@@ -285,17 +283,15 @@ items:
         '
       id: x
       type:
-      - 'numpy.array or @cntk.ops.functions.Function
-
-        '
+      - numpy.array
+      - cntk.ops.functions.Function
     - description: 'axis along which the reduction will be performed
 
         '
       id: axis
       type:
-      - 'int or @cntk.axis.Axis
-
-        '
+      - int
+      - cntk.axis.Axis
     - description: 'the name of the Function instance in the network
 
         '
@@ -912,7 +908,8 @@ items:
         '
       id: value
       type:
-      - scalar or NumPy array, optional
+      - scalar
+      - NumPy array, optional
     - description: 'the shape of the input tensor. If not provided, it will
 
         be inferred from `value`.
@@ -920,7 +917,8 @@ items:
         '
       id: shape
       type:
-      - tuple or int, optional
+      - tuple
+      - int, optional
     - description: 'data type of the constant. If a NumPy array and `dtype`,
 
         are given, then data will be converted if needed. If none given, it will default
@@ -1628,9 +1626,8 @@ items:
         '
       id: x
       type:
-      - 'numpy.array or @cntk.ops.functions.Function
-
-        '
+      - numpy.array
+      - cntk.ops.functions.Function
     - description: 'the name of the Function instance in the network
 
         '
@@ -2115,13 +2112,15 @@ items:
         '
       id: shape
       type:
-      - tuple or int
+      - tuple
+      - int
     - description: 'data type. Default is np.float32.
 
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'whether to back-propagates to it or not. False by default.
 
         '
@@ -2139,7 +2138,8 @@ items:
         '
       id: dynamic_axes
       type:
-      - list or tuple, default
+      - list
+      - tuple, default
     - description: 'the name of the Function instance in the network
 
         '
@@ -2179,13 +2179,15 @@ items:
         '
       id: shape
       type:
-      - tuple or int
+      - tuple
+      - int
     - description: 'data type. Default is np.float32.
 
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'whether to back-propagates to it or not. False by default.
 
         '
@@ -2203,7 +2205,8 @@ items:
         '
       id: dynamic_axes
       type:
-      - list or tuple, default
+      - list
+      - tuple, default
     - description: 'the name of the Function instance in the network
 
         '
@@ -2307,9 +2310,8 @@ items:
         '
       id: x
       type:
-      - 'numpy.array or @cntk.ops.functions.Function
-
-        '
+      - numpy.array
+      - cntk.ops.functions.Function
     - description: 'the name of the Function instance in the network
 
         '
@@ -2840,19 +2842,22 @@ items:
         '
       id: shape
       type:
-      - tuple or int
+      - tuple
+      - int
     - description: 'data type
 
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'a list of dynamic axis (e.g., batch axis, time axis)
 
         '
       id: dynamic_axes
       type:
-      - list or tuple
+      - list
+      - tuple
     - description: 'the name of the Function instance in the network
 
         '
@@ -2916,9 +2921,8 @@ items:
         '
       id: x
       type:
-      - 'numpy.array or @cntk.ops.functions.Function
-
-        '
+      - numpy.array
+      - cntk.ops.functions.Function
     - description: 'the name of the Function instance in the network
 
         '
@@ -2963,7 +2967,8 @@ items:
         '
       id: shape
       type:
-      - tuple or int, optional
+      - tuple
+      - int, optional
     - description: 'if init is a scalar
 
         it will be replicated for every element in the tensor or
@@ -2979,7 +2984,9 @@ items:
         '
       id: init
       type:
-      - scalar or NumPy array or initializer
+      - scalar
+      - NumPy array
+      - initializer
     - description: 'data type of the constant. If a NumPy array and `dtype`,
 
         are given, then data will be converted if needed. If none given, it will default
@@ -3087,7 +3094,8 @@ items:
         '
       id: shape
       type:
-      - tuple or int
+      - tuple
+      - int
     - description: 'the list of dynamic axes that the actual variable uses
 
         '
@@ -3828,9 +3836,8 @@ items:
         '
       id: axis
       type:
-      - 'int or @cntk.axis.Axis
-
-        '
+      - int
+      - cntk.axis.Axis
     - description: 'the name of the Function instance in the network
 
         '
@@ -3953,7 +3960,8 @@ items:
         '
       id: begin_axis
       type:
-      - int or None
+      - int
+      - None
     - description: 'shape replacement ends at this axis (excluding this axis).
 
         Negative values are counting from the end. *None* refers to the end of the
@@ -3962,7 +3970,8 @@ items:
         '
       id: end_axis
       type:
-      - int or None
+      - int
+      - None
     - description: 'the name of the Function instance in the network
 
         '
@@ -4279,9 +4288,8 @@ items:
         '
       id: axis
       type:
-      - 'int or @cntk.axis.Axis
-
-        '
+      - int
+      - cntk.axis.Axis
     - description: 'the name of the Function instance in the network
 
         '
@@ -4354,9 +4362,8 @@ items:
         '
       id: x
       type:
-      - 'numpy.array or @cntk.ops.functions.Function
-
-        '
+      - numpy.array
+      - cntk.ops.functions.Function
     - description: 'optional steepness factor
 
         '
@@ -4417,7 +4424,8 @@ items:
         '
       id: axis
       type:
-      - 'int or @cntk.axis.Axis
+      - int
+      - 'cntk.axis.Axis
 
         , optional, keyword only'
     - description: 'the name of the Function instance in the network
@@ -4599,17 +4607,15 @@ items:
         '
       id: axis1
       type:
-      - 'int or @cntk.axis.Axis
-
-        '
+      - int
+      - cntk.axis.Axis
     - description: 'the axis to swap with `axis1`
 
         '
       id: axis2
       type:
-      - 'int or @cntk.axis.Axis
-
-        '
+      - int
+      - cntk.axis.Axis
     - description: 'the name of the Function instance in the network
 
         '
@@ -4692,11 +4698,11 @@ items:
     \ matrix.\nThe operator '@' has been overloaded such that in Python 3.5 and later\
     \ X @ W equals times(X, W).\n\nFor better performance on times operation on sequence\
     \ which is followed by sequence.reduce_sum, use\ninfer_input_rank_to_map=TIMES_REDUCE_SEQUENCE_AXIS_WITHOUT_INFERRED_INPUT_RANK,\
-    \ i.e. replace following:\n\n<!-- literal_block {\"classes\": [], \"backrefs\"\
-    : [], \"ids\": [], \"xml:space\": \"preserve\", \"dupnames\": [], \"names\": []}\
+    \ i.e. replace following:\n\n<!-- literal_block {\"backrefs\": [], \"ids\": [],\
+    \ \"xml:space\": \"preserve\", \"names\": [], \"dupnames\": [], \"classes\": []}\
     \ -->\n\n````\n\n   sequence.reduce_sum(times(seq1, seq2))\n   ````\n\nwith:\n\
-    \n<!-- literal_block {\"classes\": [], \"backrefs\": [], \"ids\": [], \"xml:space\"\
-    : \"preserve\", \"dupnames\": [], \"names\": []} -->\n\n````\n\n   times(seq1,\
+    \n<!-- literal_block {\"backrefs\": [], \"ids\": [], \"xml:space\": \"preserve\"\
+    , \"names\": [], \"dupnames\": [], \"classes\": []} -->\n\n````\n\n   times(seq1,\
     \ seq2, infer_input_rank_to_map=TIMES_REDUCE_SEQUENCE_AXIS_WITHOUT_INFERRED_INPUT_RANK)\n\
     \   ````\n"
   syntax:

@@ -349,13 +349,15 @@ items:
         '
       id: shape
       type:
-      - tuple or int
+      - tuple
+      - int
     - description: 'data type. Default is np.float32.
 
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'whether to back-propagates to it or not. False by default.
 
         '
@@ -413,13 +415,15 @@ items:
         '
       id: shape
       type:
-      - tuple or int
+      - tuple
+      - int
     - description: 'data type. Default is np.float32.
 
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'whether to back-propagates to it or not. False by default.
 
         '
@@ -950,7 +954,8 @@ items:
         '
       id: padding_value
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'whether the Function has a mask tensor output denoting the
 
         gaps in the unpacked output due to differences across lengths of the sequences

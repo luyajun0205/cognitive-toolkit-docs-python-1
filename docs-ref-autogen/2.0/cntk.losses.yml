@@ -268,7 +268,8 @@ items:
         '
       id: axis
       type:
-      - 'int or @cntk.axis.Axis
+      - int
+      - 'cntk.axis.Axis
 
         , optional'
     - description: 'the name of the Function instance in the network

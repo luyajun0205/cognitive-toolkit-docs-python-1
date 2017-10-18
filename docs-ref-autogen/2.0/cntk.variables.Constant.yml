@@ -47,13 +47,17 @@ items:
         '
       id: value
       type:
-      - np.ndarray or list or float or int
+      - np.ndarray
+      - list
+      - float
+      - int
     - description: 'data type to store the values as.
 
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'the device on which the values should reside.
 
         '

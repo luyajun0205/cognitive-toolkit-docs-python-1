@@ -62,7 +62,8 @@ items:
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'success probability
 
         '
@@ -184,7 +185,8 @@ items:
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'location of the distribution
 
         '
@@ -320,7 +322,8 @@ items:
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'mean of the distribution
 
         '
@@ -453,7 +456,8 @@ items:
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'lower end of the range of the random numbers
 
         '

@@ -330,7 +330,10 @@ items:
         '
       id: momentum
       type:
-      - "output of @cntk.learners.momentum_schedule\n or @cntk.learners.momentum_as_time_constant_schedule\n"
+      - 'output of @cntk.learners.momentum_schedule
+
+        '
+      - cntk.learners.momentum_as_time_constant_schedule
     - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
         to the value returned by @cntk.learners.default_unit_gain_value.
@@ -344,7 +347,10 @@ items:
         '
       id: variance_momentum
       type:
-      - "output of @cntk.learners.momentum_schedule\n or @cntk.learners.momentum_as_time_constant_schedule\n"
+      - 'output of @cntk.learners.momentum_schedule
+
+        '
+      - cntk.learners.momentum_as_time_constant_schedule
     - description: 'the L1 regularization weight per sample,
 
         defaults to 0.0
@@ -503,7 +509,10 @@ items:
         '
       id: momentum
       type:
-      - "output of @cntk.learners.momentum_schedule\n or @cntk.learners.momentum_as_time_constant_schedule\n"
+      - 'output of @cntk.learners.momentum_schedule
+
+        '
+      - cntk.learners.momentum_as_time_constant_schedule
     - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
         to the value returned by @cntk.learners.default_unit_gain_value.
@@ -517,7 +526,10 @@ items:
         '
       id: variance_momentum
       type:
-      - "output of @cntk.learners.momentum_schedule\n or @cntk.learners.momentum_as_time_constant_schedule\n"
+      - 'output of @cntk.learners.momentum_schedule
+
+        '
+      - cntk.learners.momentum_as_time_constant_schedule
     - description: 'the L1 regularization weight per sample,
 
         defaults to 0.0
@@ -605,7 +617,8 @@ items:
         '
       id: lr
       type:
-      - float or list
+      - float
+      - list
     - description: 'see parameter
 
         `unit` in @cntk.learners.training_parameter_schedule.
@@ -820,7 +833,10 @@ items:
         '
       id: momentum
       type:
-      - "output of @cntk.learners.momentum_schedule\n or @cntk.learners.momentum_as_time_constant_schedule\n"
+      - 'output of @cntk.learners.momentum_schedule
+
+        '
+      - cntk.learners.momentum_as_time_constant_schedule
     - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
         to the value returned by @cntk.learners.default_unit_gain_value.
@@ -939,7 +955,10 @@ items:
         '
       id: momentum
       type:
-      - "output of @cntk.learners.momentum_schedule\n or @cntk.learners.momentum_as_time_constant_schedule\n"
+      - 'output of @cntk.learners.momentum_schedule
+
+        '
+      - cntk.learners.momentum_as_time_constant_schedule
     - description: 'when `True`, momentum is interpreted as a unit-gain filter. Defaults
 
         to the value returned by @cntk.learners.default_unit_gain_value.
@@ -1363,7 +1382,8 @@ items:
         '
       id: schedule
       type:
-      - float or list
+      - float
+      - list
     - description: 'one of two
 
         * `sample`: the returned schedule contains per-sample values

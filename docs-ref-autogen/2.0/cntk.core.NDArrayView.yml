@@ -209,7 +209,8 @@ items:
         '
       id: data
       type:
-      - numpy.ndarray or scipy.sparse.csr_matrix
+      - numpy.ndarray
+      - scipy.sparse.csr_matrix
     - description: 'device this value
 
         should be put on
@@ -389,13 +390,15 @@ items:
         '
       id: start_offset
       type:
-      - tuple or list
+      - tuple
+      - list
     - description: 'shape of the right-aligned extent to keep
 
         '
       id: extent
       type:
-      - tuple or list
+      - tuple
+      - list
     - description: 'whether the returned slice is read only or not
 
         '

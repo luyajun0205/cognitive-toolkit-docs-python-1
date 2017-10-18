@@ -47,11 +47,11 @@ items:
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 826
   summary: "Configures the image reader that reads base64 encoded images and corresponding\n\
-    labels from a file of the form:\n\n<!-- literal_block {\"classes\": [], \"backrefs\"\
-    : [], \"ids\": [], \"xml:space\": \"preserve\", \"dupnames\": [], \"names\": []}\
-    \ -->\n\n````\n\n   [sequenceId <tab>] <numerical label (0-based class id)> <tab>\
-    \ <base64 encoded image>\n   ````\n\nSimilarly to the ImageDeserializer, the sequenceId\
-    \ prefix is optional and can be omitted.\n"
+    labels from a file of the form:\n\n<!-- literal_block {\"backrefs\": [], \"ids\"\
+    : [], \"xml:space\": \"preserve\", \"names\": [], \"dupnames\": [], \"classes\"\
+    : []} -->\n\n````\n\n   [sequenceId <tab>] <numerical label (0-based class id)>\
+    \ <tab> <base64 encoded image>\n   ````\n\nSimilarly to the ImageDeserializer,\
+    \ the sequenceId prefix is optional and can be omitted.\n"
   syntax:
     content: Base64ImageDeserializer(filename, streams)
     parameters:
@@ -82,12 +82,11 @@ items:
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 846
   summary: "Configures the CNTK text-format reader that reads text-based files with\n\
-    lines of the form:\n\n<!-- literal_block {\"classes\": [], \"backrefs\": [], \"\
-    ids\": [], \"xml:space\": \"preserve\", \"dupnames\": [], \"names\": []} -->\n\
-    \n````\n\n   [Sequence_Id] (Sample)+\n   ````\n\nwhere:\n\n<!-- literal_block\
-    \ {\"classes\": [], \"backrefs\": [], \"ids\": [], \"xml:space\": \"preserve\"\
-    , \"dupnames\": [], \"names\": []} -->\n\n````\n\n   Sample=|Input_Name (Value\
-    \ )*\n   ````\n"
+    lines of the form:\n\n<!-- literal_block {\"backrefs\": [], \"ids\": [], \"xml:space\"\
+    : \"preserve\", \"names\": [], \"dupnames\": [], \"classes\": []} -->\n\n````\n\
+    \n   [Sequence_Id] (Sample)+\n   ````\n\nwhere:\n\n<!-- literal_block {\"backrefs\"\
+    : [], \"ids\": [], \"xml:space\": \"preserve\", \"names\": [], \"dupnames\": [],\
+    \ \"classes\": []} -->\n\n````\n\n   Sample=|Input_Name (Value )*\n   ````\n"
   syntax:
     content: CTFDeserializer(filename, streams)
     parameters:
@@ -197,11 +196,11 @@ items:
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 804
   summary: "Configures the image reader that reads images and corresponding\nlabels\
-    \ from a file of the form:\n\n<!-- literal_block {\"classes\": [], \"backrefs\"\
-    : [], \"ids\": [], \"xml:space\": \"preserve\", \"dupnames\": [], \"names\": []}\
+    \ from a file of the form:\n\n<!-- literal_block {\"backrefs\": [], \"ids\": [],\
+    \ \"xml:space\": \"preserve\", \"names\": [], \"dupnames\": [], \"classes\": []}\
     \ -->\n\n````\n\n   <full path to image> <tab> <numerical label (0-based class\
-    \ id)>\n   ````\n\nor:\n\n<!-- literal_block {\"classes\": [], \"backrefs\": [],\
-    \ \"ids\": [], \"xml:space\": \"preserve\", \"dupnames\": [], \"names\": []} -->\n\
+    \ id)>\n   ````\n\nor:\n\n<!-- literal_block {\"backrefs\": [], \"ids\": [], \"\
+    xml:space\": \"preserve\", \"names\": [], \"dupnames\": [], \"classes\": []} -->\n\
     \n````\n\n   sequenceId <tab> path <tab> label\n   ````\n"
   syntax:
     content: ImageDeserializer(filename, streams)
@@ -257,7 +256,8 @@ items:
         '
       id: shape
       type:
-      - int or tuple, defaults to None
+      - int
+      - tuple, defaults to None
     - defaultValue: 'False'
       description: 'whether the provided data is
 
@@ -295,14 +295,16 @@ items:
         '
       id: scp
       type:
-      - str or list, defaults to None
+      - str
+      - list, defaults to None
     - defaultValue: None
       description: 'mlf files for HTK data
 
         '
       id: mlf
       type:
-      - str or list, defaults to None
+      - str
+      - list, defaults to None
     - defaultValue: None
       description: 'whether the features in this
 

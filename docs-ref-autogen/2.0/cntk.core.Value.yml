@@ -64,7 +64,8 @@ items:
         '
       id: seq_starts
       type:
-      - list of bools or None
+      - list of bools
+      - None
     - description: 'device this value
 
         should be put on
@@ -156,7 +157,8 @@ items:
         '
       id: seq_starts
       type:
-      - list of bools or None
+      - list of bools
+      - None
     - description: 'device
 
         this value should be put on
@@ -392,7 +394,8 @@ items:
         '
       id: sample_shape
       type:
-      - int or tuple
+      - int
+      - tuple
     - description: 'data type
 
         '

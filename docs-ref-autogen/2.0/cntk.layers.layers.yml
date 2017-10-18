@@ -165,7 +165,8 @@ items:
         '
       id: filter_shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - defaultValue: '1'
       description: 'stride (increment when sliding over the input). Use a *tuple*
         to specify a per-axis value.
@@ -173,7 +174,8 @@ items:
         '
       id: strides
       type:
-      - int or tuple of ints, defaults to 1
+      - int
+      - tuple of ints, defaults to 1
     - description: 'if *False*, then the pooling operation will be shifted over the
         "valid"
 
@@ -188,7 +190,8 @@ items:
         '
       id: pad
       type:
-      - bool or tuple of bools, defaults to False
+      - bool
+      - tuple of bools, defaults to False
     - defaultValue: ''
       description: 'the name of the function instance in the network
 
@@ -259,7 +262,8 @@ items:
         '
       id: map_rank
       type:
-      - 1 or None
+      - '1'
+      - None
     - defaultValue: '1'
       description: 'initial value for the `scale` parameter
 
@@ -412,7 +416,8 @@ items:
         '
       id: filter_shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - defaultValue: None
       description: 'number of filters (output feature-map depth), or `()` to denote
         scalar output items (output shape will have no depth axis).
@@ -442,11 +447,11 @@ items:
         '
       id: init
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
-        , defaults to @cntk.initializer.glorot_uniform
-
-        '
+        , defaults to @cntk.initializer.glorot_uniform'
     - description: 'if *False*, then the filter will be shifted over the "valid"
 
         area of input, that is, no value outside the area is used. If `pad=True` on
@@ -460,7 +465,8 @@ items:
         '
       id: pad
       type:
-      - bool or tuple of bools, defaults to False
+      - bool
+      - tuple of bools, defaults to False
     - defaultValue: '1'
       description: 'stride of the convolution (increment when sliding the filter over
         the input). Use a *tuple* to specify a per-axis value.
@@ -468,7 +474,8 @@ items:
         '
       id: strides
       type:
-      - int or tuple of ints, defaults to 1
+      - int
+      - tuple of ints, defaults to 1
     - defaultValue: 'True'
       description: 'When *True*, every position uses the same Convolution kernel.  When
         *False*, you can have a different Convolution kernel per position, but *False*
@@ -489,7 +496,9 @@ items:
         '
       id: init_bias
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defaults to 0'
     - defaultValue: '1'
@@ -567,7 +576,8 @@ items:
         '
       id: filter_shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - defaultValue: None
       description: 'number of filters (output feature-map depth), or `()` to denote
         scalar output items (output shape will have no depth axis).
@@ -589,11 +599,11 @@ items:
         '
       id: init
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
-        , defaults to @cntk.initializer.glorot_uniform
-
-        '
+        , defaults to @cntk.initializer.glorot_uniform'
     - description: 'if *False*, then the filter will be shifted over the "valid"
 
         area of input, that is, no value outside the area is used. If `pad=True` on
@@ -607,7 +617,8 @@ items:
         '
       id: pad
       type:
-      - bool or tuple of bools, defaults to False
+      - bool
+      - tuple of bools, defaults to False
     - defaultValue: '1'
       description: 'stride of the convolution (increment when sliding the filter over
         the input). Use a *tuple* to specify a per-axis value.
@@ -615,7 +626,8 @@ items:
         '
       id: strides
       type:
-      - int or tuple of ints, defaults to 1
+      - int
+      - tuple of ints, defaults to 1
     - description: 'the layer will have no bias if *False* is passed here
 
         '
@@ -627,7 +639,9 @@ items:
         '
       id: init_bias
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defaults to 0'
     - defaultValue: '1'
@@ -687,7 +701,8 @@ items:
         '
       id: filter_shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - defaultValue: None
       description: 'number of filters (output feature-map depth), or `()` to denote
         scalar output items (output shape will have no depth axis).
@@ -709,11 +724,11 @@ items:
         '
       id: init
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
-        , defaults to @cntk.initializer.glorot_uniform
-
-        '
+        , defaults to @cntk.initializer.glorot_uniform'
     - description: 'if *False*, then the filter will be shifted over the "valid"
 
         area of input, that is, no value outside the area is used. If `pad=True` on
@@ -727,7 +742,8 @@ items:
         '
       id: pad
       type:
-      - bool or tuple of bools, defaults to False
+      - bool
+      - tuple of bools, defaults to False
     - defaultValue: '1'
       description: 'stride of the convolution (increment when sliding the filter over
         the input). Use a *tuple* to specify a per-axis value.
@@ -735,7 +751,8 @@ items:
         '
       id: strides
       type:
-      - int or tuple of ints, defaults to 1
+      - int
+      - tuple of ints, defaults to 1
     - description: 'the layer will have no bias if *False* is passed here
 
         '
@@ -747,7 +764,9 @@ items:
         '
       id: init_bias
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defaults to 0'
     - defaultValue: '1'
@@ -807,7 +826,8 @@ items:
         '
       id: filter_shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - defaultValue: None
       description: 'number of filters (output feature-map depth), or `()` to denote
         scalar output items (output shape will have no depth axis).
@@ -829,11 +849,11 @@ items:
         '
       id: init
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
-        , defaults to @cntk.initializer.glorot_uniform
-
-        '
+        , defaults to @cntk.initializer.glorot_uniform'
     - description: 'if *False*, then the filter will be shifted over the "valid"
 
         area of input, that is, no value outside the area is used. If `pad=True` on
@@ -847,7 +867,8 @@ items:
         '
       id: pad
       type:
-      - bool or tuple of bools, defaults to False
+      - bool
+      - tuple of bools, defaults to False
     - defaultValue: '1'
       description: 'stride of the convolution (increment when sliding the filter over
         the input). Use a *tuple* to specify a per-axis value.
@@ -855,7 +876,8 @@ items:
         '
       id: strides
       type:
-      - int or tuple of ints, defaults to 1
+      - int
+      - tuple of ints, defaults to 1
     - description: 'the layer will have no bias if *False* is passed here
 
         '
@@ -867,7 +889,9 @@ items:
         '
       id: init_bias
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defaults to 0'
     - defaultValue: '1'
@@ -987,7 +1011,8 @@ items:
         '
       id: filter_shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - description: 'number of filters (output feature-map depth), or `()` to denote
         scalar output items (output shape will have no depth axis).
 
@@ -1008,11 +1033,10 @@ items:
         '
       id: init
       type:
-      - 'scalar or @cntk.initializer
+      - scalar
+      - 'cntk.initializer
 
-        , default @cntk.initializer.glorot_uniform
-
-        '
+        , default @cntk.initializer.glorot_uniform'
     - description: 'if *False*, then the filter will be shifted over the "valid"
 
         area of input, that is, no value outside the area is used. If `pad=True` on
@@ -1026,7 +1050,8 @@ items:
         '
       id: pad
       type:
-      - bool or tuple of bools, default False
+      - bool
+      - tuple of bools, default False
     - defaultValue: '1'
       description: 'stride of the convolution (increment when sliding the filter over
         the input). Use a *tuple* to specify a per-axis value.
@@ -1034,7 +1059,8 @@ items:
         '
       id: strides
       type:
-      - int or tuple of ints, default 1
+      - int
+      - tuple of ints, default 1
     - defaultValue: 'True'
       description: 'weight sharing, must be True for now.
 
@@ -1053,9 +1079,9 @@ items:
         '
       id: init_bias
       type:
-      - 'scalar or NumPy array or @cntk.initializer
-
-        '
+      - scalar
+      - NumPy array
+      - cntk.initializer
     - defaultValue: None
       description: 'output shape. When strides > 2, the output shape is non-deterministic.
         User can specify the wanted output shape. Note the
@@ -1067,7 +1093,8 @@ items:
         '
       id: output_shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - defaultValue: '1'
       description: 'must be 1 for now.
 
@@ -1334,7 +1361,8 @@ items:
         '
       id: shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - description: 'optional function to apply at the end, e.g. *relu*
 
         '
@@ -1348,11 +1376,11 @@ items:
         '
       id: init
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
-        , defaults to @cntk.initializer.glorot_uniform
-
-        '
+        , defaults to @cntk.initializer.glorot_uniform'
     - defaultValue: None
       description: 'number of inferred axes to add to W (*map_rank* must not be given)
 
@@ -1379,7 +1407,9 @@ items:
         '
       id: init_bias
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defualts to 0'
     - defaultValue: ''
@@ -1533,8 +1563,8 @@ items:
     \ lookup if the input is sparse.\n\nThe lookup table in this layer is learnable,\n\
     unless a user-specified one is supplied through the `weights` parameter.\nFor\
     \ example, to use an existing embedding table from a file in numpy format, use\
-    \ this:\n\n<!-- literal_block {\"classes\": [], \"backrefs\": [], \"ids\": [],\
-    \ \"xml:space\": \"preserve\", \"dupnames\": [], \"names\": []} -->\n\n````\n\n\
+    \ this:\n\n<!-- literal_block {\"backrefs\": [], \"ids\": [], \"xml:space\": \"\
+    preserve\", \"names\": [], \"dupnames\": [], \"classes\": []} -->\n\n````\n\n\
     \   Embedding(weights=np.load('PATH.npy'))\n   ````\n\nTo initialize a learnable\
     \ lookup table with a given numpy array that is to be used as\nthe initial value,\
     \ pass that array to the `init` parameter (not `weights`).\n\nAn `Embedding` instance\
@@ -1548,17 +1578,18 @@ items:
         '
       id: shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - description: '(learnable embedding only) initial value of weights *E*
 
         '
       id: init
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
-        , defaults to @cntk.initializer.glorot_uniform
-
-        '
+        , defaults to @cntk.initializer.glorot_uniform'
     - defaultValue: None
       description: '(user-supplied embedding only) the lookup table.
 
@@ -1838,7 +1869,8 @@ items:
         '
       id: filter_shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - defaultValue: '1'
       description: 'stride (increment when sliding over the input). Use a *tuple*
         to specify a per-axis value.
@@ -1846,7 +1878,8 @@ items:
         '
       id: strides
       type:
-      - int or tuple of ints, defaults to 1
+      - int
+      - tuple of ints, defaults to 1
     - description: 'if *False*, then the pooling operation will be shifted over the
         "valid"
 
@@ -1861,7 +1894,8 @@ items:
         '
       id: pad
       type:
-      - bool or tuple of bools, defaults to False
+      - bool
+      - tuple of bools, defaults to False
     - defaultValue: ''
       description: 'the name of the function instance in the network
 

@@ -44,7 +44,8 @@ items:
         '
       id: deserializers
       type:
-      - a single deserializer or a list
+      - a single deserializer
+      - a list
     - description: 'The maximum number of input samples
 
         (not ''label samples'') the reader can produce. After this number has been
