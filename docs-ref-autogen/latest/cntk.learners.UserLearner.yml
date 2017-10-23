@@ -16,7 +16,7 @@ items:
       branch: master
       path: bindings/python/cntk\learners\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 170
+    startLine: 159
   summary: 'Base class of all user-defined learners. To implement your own learning
 
     algorithm, derive from this class and override the @cntk.learners.UserLearner.update.
@@ -45,7 +45,7 @@ items:
       branch: master
       path: bindings/python/cntk\learners\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 211
+    startLine: 200
   summary: 'Update the parameters associated with this learner.
 
     '

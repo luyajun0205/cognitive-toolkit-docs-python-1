@@ -331,6 +331,8 @@
         uid: cntk.ops.functions.CloneMethod
       - name: cntk.ops.functions.Function
         uid: cntk.ops.functions.Function
+      - name: cntk.ops.functions.ModelFormat
+        uid: cntk.ops.functions.ModelFormat
       - name: cntk.ops.functions.UserFunction
         uid: cntk.ops.functions.UserFunction
       name: cntk.ops.functions

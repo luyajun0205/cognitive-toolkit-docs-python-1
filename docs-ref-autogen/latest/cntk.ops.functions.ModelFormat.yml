@@ -1,0 +1,98 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.ops.functions.ModelFormat.CNTKv2
+  - cntk.ops.functions.ModelFormat.ONNX
+  class: cntk.ops.functions.ModelFormat
+  fullName: cntk.ops.functions.ModelFormat
+  inheritance:
+  - inheritance:
+    - type: builtins.object
+    type: enum.Enum
+  langs:
+  - python
+  module: cntk.ops.functions
+  name: ModelFormat
+  source:
+    id: ModelFormat
+    path: bindings/python/cntk\ops\functions.py
+    remote:
+      branch: master
+      path: bindings/python/cntk\ops\functions.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 31
+  summary: 'Describes the supported disk format for CNTK model.
+
+
+
+    '
+  syntax: {}
+  type: class
+  uid: cntk.ops.functions.ModelFormat
+- class: cntk.ops.functions.ModelFormat
+  fullName: cntk.ops.functions.ModelFormat.CNTKv2
+  id: CNTKv2
+  langs:
+  - python
+  module: cntk.ops.functions
+  name: CNTKv2
+  parent: cntk.ops.functions.ModelFormat
+  source:
+    id: CNTKv2
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: null
+  summary: 'Default CNTK version 2 format, it supports all CNTK functionalities.
+
+    '
+  syntax:
+    content: CNTKv2 = 0
+    return:
+      type:
+      - cntk.ops.functions.ModelFormat
+  type: attribute
+  uid: cntk.ops.functions.ModelFormat.CNTKv2
+- class: cntk.ops.functions.ModelFormat
+  fullName: cntk.ops.functions.ModelFormat.ONNX
+  id: ONNX
+  langs:
+  - python
+  module: cntk.ops.functions
+  name: ONNX
+  parent: cntk.ops.functions.ModelFormat
+  source:
+    id: ONNX
+    path: null
+    remote:
+      branch: master
+      path: null
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: null
+  summary: '*Open Neural Network Exchange format from https* -- //github.com/onnx/onnx,
+    ONNX currently support
+
+    subset of CNTK functionalities.
+
+    '
+  syntax:
+    content: ONNX = 1
+    return:
+      type:
+      - cntk.ops.functions.ModelFormat
+  type: attribute
+  uid: cntk.ops.functions.ModelFormat.ONNX
+references:
+- fullName: cntk.ops.functions.ModelFormat.CNTKv2
+  isExternal: false
+  name: CNTKv2
+  parent: cntk.ops.functions.ModelFormat
+  uid: cntk.ops.functions.ModelFormat.CNTKv2
+- fullName: cntk.ops.functions.ModelFormat.ONNX
+  isExternal: false
+  name: ONNX
+  parent: cntk.ops.functions.ModelFormat
+  uid: cntk.ops.functions.ModelFormat.ONNX

@@ -20,7 +20,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 522
+    startLine: 533
   summary: 'Helper to pass a callback function to be called after each training epoch
 
     to @cntk.train.trainer.Trainer,
@@ -68,7 +68,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 547
+    startLine: 558
   syntax:
     content: on_write_test_summary(samples, updates, summaries, aggregate_metric,
       elapsed_milliseconds)
@@ -94,7 +94,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 542
+    startLine: 553
   syntax:
     content: on_write_test_update(*args, **kwargs)
     parameters:
@@ -114,7 +114,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 544
+    startLine: 555
   syntax:
     content: on_write_training_summary(samples, updates, summaries, aggregate_loss,
       aggregate_metric, elapsed_milliseconds)
@@ -141,7 +141,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 540
+    startLine: 551
   syntax:
     content: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
     parameters:
@@ -165,7 +165,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 549
+    startLine: 560
   syntax:
     content: write(*args, **kwargs)
     parameters:

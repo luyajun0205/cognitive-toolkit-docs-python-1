@@ -21,7 +21,7 @@ items:
       branch: master
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 418
+    startLine: 411
   summary: 'Base class of all user minibatch sources.
 
 
@@ -48,7 +48,7 @@ items:
       branch: master
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 487
+    startLine: 480
   summary: 'Returns a dictionary describing the current state of the minibatch
 
     source. Needs to be overwritten if the state of the minibatch source
@@ -79,7 +79,7 @@ items:
       branch: master
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 521
+    startLine: 514
   summary: 'Should return true if the user has not specified any limit on the number
     of sweeps and samples.
 
@@ -103,7 +103,7 @@ items:
       branch: master
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 450
+    startLine: 443
   summary: 'Function to be implemented by the user.
 
     '
@@ -158,7 +158,7 @@ items:
       branch: master
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 498
+    startLine: 491
   summary: 'Sets the state of the checkpoint.
 
     '
@@ -186,7 +186,7 @@ items:
       branch: master
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 442
+    startLine: 435
   summary: 'Gets the description of the stream with given name.
 
     Throws an exception if there are none or multiple streams with this
@@ -214,7 +214,7 @@ items:
       branch: master
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 428
+    startLine: 421
   summary: 'Function to be implemented by the user.
 
     '

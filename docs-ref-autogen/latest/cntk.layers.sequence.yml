@@ -121,8 +121,8 @@ items:
   summary: "Layer factory function to create a function that runs a step function\
     \ recurrently over an input sequence,\nand returns the final state.\nThis is often\
     \ used for embeddings of sequences, e.g. in a sequence-to-sequence model.\nPseudo-code:\n\
-    \n<!-- literal_block {\"xml:space\": \"preserve\", \"classes\": [], \"ids\": [],\
-    \ \"names\": [], \"dupnames\": [], \"backrefs\": []} -->\n\n````\n\n   # pseudo-code\
+    \n<!-- literal_block {\"xml:space\": \"preserve\", \"classes\": [], \"backrefs\"\
+    : [], \"names\": [], \"dupnames\": [], \"ids\": []} -->\n\n````\n\n   # pseudo-code\
     \ for h = Fold(step_function)(x)\n   #  x: input sequence of tensors along the\
     \ dynamic axis\n   #  h: resulting final step-function output tensor that no longer\
     \ has a dynamic axis\n   h = initial_state   # h = output of previous step (\"\
@@ -153,7 +153,8 @@ items:
         '
       id: folder_function
       type:
-      - "cntk.ops.functions.Function\n or equivalent Python function"
+      - cntk.ops.functions.Function
+      - equivalent Python function
     - description: 'if `True` then run the recurrence from the end of the sequence
         to the start.
 
@@ -172,7 +173,9 @@ items:
         '
       id: initial_state
       type:
-      - scalar or tensor without batch dimension; or a tuple thereof
+      - scalar
+      - tensor without batch dimension;
+      - a tuple thereof
     - defaultValue: 'False'
       description: 'if `True` and the step function has more than one
 
@@ -267,7 +270,8 @@ items:
         '
       id: axis
       type:
-      - 'int or @cntk.axis.Axis
+      - int
+      - 'cntk.axis.Axis
 
         , optional, keyword only'
     - description: 'the name of the Function instance in the network
@@ -326,8 +330,8 @@ items:
     \ step, Recurrence() will pass to the step function a data input as well as the\
     \ output of the\nprevious step.\nThe following pseudo-code repesents what happens\
     \ when you call a *Recurrence()* layer:\n\n<!-- literal_block {\"xml:space\":\
-    \ \"preserve\", \"classes\": [], \"ids\": [], \"names\": [], \"dupnames\": [],\
-    \ \"backrefs\": []} -->\n\n````\n\n   # pseudo-code for y = Recurrence(step_function)(x)\n\
+    \ \"preserve\", \"classes\": [], \"backrefs\": [], \"names\": [], \"dupnames\"\
+    : [], \"ids\": []} -->\n\n````\n\n   # pseudo-code for y = Recurrence(step_function)(x)\n\
     \   #  x: input sequence of tensors along the dynamic axis\n   #  y: resulting\
     \ sequence of outputs along the same dynamic axis\n   y = []              # result\
     \ sequence goes here\n   s = initial_state   # s = output of previous step (\"\
@@ -371,7 +375,8 @@ items:
         '
       id: step_function
       type:
-      - "cntk.ops.functions.Function\n or equivalent Python function"
+      - cntk.ops.functions.Function
+      - equivalent Python function
     - description: 'if `True` then run the recurrence from the end of the sequence
         to the start.
 
@@ -390,7 +395,9 @@ items:
         '
       id: initial_state
       type:
-      - scalar or tensor without batch dimension; or a tuple thereof
+      - scalar
+      - tensor without batch dimension;
+      - a tuple thereof
     - defaultValue: 'False'
       description: 'if `True` and the step function has more than one
 
@@ -493,7 +500,7 @@ items:
     This form is meant for use in sequence-to-sequence scenarios.\nThis documentation\
     \ only covers this case; for additional information on parameters, see @cntk.layers.sequence.Recurrence.\n\
     In pseudo-code:\n\n<!-- literal_block {\"xml:space\": \"preserve\", \"classes\"\
-    : [], \"ids\": [], \"names\": [], \"dupnames\": [], \"backrefs\": []} -->\n\n\
+    : [], \"backrefs\": [], \"names\": [], \"dupnames\": [], \"ids\": []} -->\n\n\
     ````\n\n   # pseudo-code for y = RecurrenceFrom(step_function)(s,x)\n   #  x:\
     \ input sequence of tensors along the dynamic axis\n   #  s: initial state for\
     \ the recurrence (computed from input data elsewhew)\n   #  y: resulting sequence\
@@ -517,7 +524,8 @@ items:
         '
       id: step_function
       type:
-      - "cntk.ops.functions.Function\n or equivalent Python function"
+      - cntk.ops.functions.Function
+      - equivalent Python function
     - description: 'if `True` then run the recurrence from the end of the sequence
         to the start.
 
@@ -537,7 +545,9 @@ items:
         '
       id: initial_state
       type:
-      - scalar or tensor without batch dimension; or a tuple thereof
+      - scalar
+      - tensor without batch dimension;
+      - a tuple thereof
     - defaultValue: ''
       description: 'if `True` and the step function has more than one
 
@@ -594,7 +604,7 @@ items:
     \ to True for the current output.\nThe maximum number of steps is based on a second\
     \ input from which only the dynamic-axis information is used.\nThis is best explained\
     \ in pseudo-code:\n\n<!-- literal_block {\"xml:space\": \"preserve\", \"classes\"\
-    : [], \"ids\": [], \"names\": [], \"dupnames\": [], \"backrefs\": []} -->\n\n\
+    : [], \"backrefs\": [], \"names\": [], \"dupnames\": [], \"ids\": []} -->\n\n\
     ````\n\n   # pseudo-code for y = UnfoldFrom(generator_function, until_predicate)(s,axis_like)\n\
     \   #  s:         initial state for the recurrence (computed from input data elsewhew),\n\
     \   #  axis_like: any input with a dynamic axis, unfold will happen along the\
@@ -634,7 +644,8 @@ items:
         '
       id: generator_function
       type:
-      - "cntk.ops.functions.Function\n or equivalent Python function"
+      - cntk.ops.functions.Function
+      - equivalent Python function
     - defaultValue: None
       description: 'A function that denotes when the last element of the unfold has
         been emitted.
@@ -653,7 +664,8 @@ items:
         '
       id: until_predicate
       type:
-      - "cntk.ops.functions.Function\n or equivalent Python function"
+      - cntk.ops.functions.Function
+      - equivalent Python function
     - defaultValue: '1'
       description: 'the maximum number of output items is equal to the
 

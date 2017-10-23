@@ -33,7 +33,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 28
+    startLine: 29
   summary: 'Allows printing various statistics (e.g. loss and metric) as training/evaluation
     progresses.
 
@@ -74,7 +74,8 @@ items:
         '
       id: freq
       type:
-      - int or None, default None
+      - int
+      - None, default None
     - description: 'Only start printing after the training minibatch number is greater
         or equal to
 
@@ -97,7 +98,8 @@ items:
         '
       id: log_to_file
       type:
-      - string or None, default None
+      - string
+      - None, default None
     - description: 'set this to distributed.rank if you are using distributed
 
         parallelism -- each rank''s log will go to separate file.
@@ -105,7 +107,8 @@ items:
         '
       id: rank
       type:
-      - int or None, default None
+      - int
+      - None, default None
     - description: 'If True output a progress message every 10 seconds or so to stdout.
 
         '
@@ -127,7 +130,8 @@ items:
         '
       id: test_freq
       type:
-      - int or None, default None
+      - int
+      - None, default None
     - description: 'similar to `first`, but applies to printing intermediate test
         results.
 
@@ -148,7 +152,8 @@ items:
         '
       id: distributed_freq
       type:
-      - int or None, default None
+      - int
+      - None, default None
     - description: 'similar to `first`, but applies to printing distributed-training
 
         worker synchronization info.
@@ -172,7 +177,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 164
+    startLine: 165
   summary: 'DEPRECATED.
 
 
@@ -198,7 +203,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 146
+    startLine: 147
   summary: 'DEPRECATED.
 
 
@@ -224,7 +229,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 173
+    startLine: 174
   summary: 'DEPRECATED.
 
 
@@ -250,7 +255,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 155
+    startLine: 156
   summary: 'DEPRECATED.
 
 
@@ -276,7 +281,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 126
+    startLine: 127
   summary: 'Prints the given message signifying the end of training.
 
     '
@@ -305,7 +310,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 228
+    startLine: 229
   summary: 'DEPRECATED.
 
 
@@ -340,7 +345,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 137
+    startLine: 138
   summary: 'Prints any message the user wishes to place in the log.
 
     '
@@ -368,7 +373,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 338
+    startLine: 339
   syntax:
     content: on_training_update_end()
     parameters:
@@ -388,7 +393,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 346
+    startLine: 347
   syntax:
     content: on_write_distributed_sync_update(samples, updates, aggregate_metric)
     parameters:
@@ -411,7 +416,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 419
+    startLine: 420
   syntax:
     content: on_write_test_summary(samples, updates, summaries, aggregate_metric,
       elapsed_milliseconds)
@@ -437,7 +442,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 342
+    startLine: 343
   syntax:
     content: on_write_test_update(samples, updates, aggregate_metric)
     parameters:
@@ -460,7 +465,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 393
+    startLine: 394
   syntax:
     content: on_write_training_summary(samples, updates, summaries, aggregate_loss,
       aggregate_metric, elapsed_milliseconds)
@@ -487,7 +492,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 334
+    startLine: 335
   syntax:
     content: on_write_training_update(samples, updates, aggregate_loss, aggregate_metric)
     parameters:
@@ -511,7 +516,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 198
+    startLine: 199
   summary: 'DEPRECATED.
 
 
@@ -541,7 +546,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 182
+    startLine: 183
   summary: 'DEPRECATED.
 
 
@@ -571,7 +576,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 260
+    startLine: 261
   summary: 'DEPRECATED.
 
 
@@ -601,7 +606,8 @@ items:
         '
       id: metric
       type:
-      - float or None
+      - float
+      - None
   type: method
   uid: cntk.logging.progress_print.ProgressPrinter.update
 - class: cntk.logging.progress_print.ProgressPrinter
@@ -617,7 +623,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 312
+    startLine: 313
   summary: 'DEPRECATED.
 
 
@@ -658,7 +664,7 @@ items:
       branch: master
       path: bindings/python/cntk\logging\progress_print.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 215
+    startLine: 216
   syntax:
     content: write(key, value)
     parameters:

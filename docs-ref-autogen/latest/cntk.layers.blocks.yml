@@ -121,7 +121,8 @@ items:
         '
       id: shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - defaultValue: None
       description: 'if given, then the output state is first computed at *cell_shape*
 
@@ -144,7 +145,9 @@ items:
         '
       id: init
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defaults to glorot_uniform'
     - description: 'initial value of weights *b*
@@ -152,7 +155,9 @@ items:
         '
       id: init_bias
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defaults to 0'
     - description: 'if *True* then add a @cntk.layers.blocks.Stabilizer
@@ -224,7 +229,8 @@ items:
         '
       id: shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - defaultValue: None
       description: 'if given, then the output state is first computed at *cell_shape*
 
@@ -251,7 +257,9 @@ items:
         '
       id: init
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defaults to glorot_uniform'
     - description: 'initial value of weights *b*
@@ -259,7 +267,9 @@ items:
         '
       id: init_bias
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defaults to 0'
     - description: 'if *True* then add a @cntk.layers.blocks.Stabilizer
@@ -331,7 +341,8 @@ items:
         '
       id: shape
       type:
-      - int or tuple of ints
+      - int
+      - tuple of ints
     - defaultValue: None
       description: 'if given, then the output state is first computed at *cell_shape*
 
@@ -354,7 +365,9 @@ items:
         '
       id: init
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defaults to glorot_uniform'
     - description: 'initial value of weights *b*
@@ -362,7 +375,9 @@ items:
         '
       id: init_bias
       type:
-      - 'scalar or NumPy array or @cntk.initializer
+      - scalar
+      - NumPy array
+      - 'cntk.initializer
 
         , defaults to 0'
     - description: 'if *True* then add a @cntk.layers.blocks.Stabilizer
