@@ -26,7 +26,7 @@ items:
     id: Axis
     path: bindings/python/cntk\axis.py
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: bindings/python/cntk\axis.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 11
@@ -82,7 +82,7 @@ items:
     id: all_axes
     path: bindings/python/cntk\internal\swig_helper.py
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 125
@@ -109,7 +109,7 @@ items:
     id: all_static_axes
     path: bindings/python/cntk\internal\swig_helper.py
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 114
@@ -136,7 +136,7 @@ items:
     id: default_batch_axis
     path: bindings/python/cntk\internal\swig_helper.py
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 103
@@ -163,7 +163,7 @@ items:
     id: default_dynamic_axis
     path: bindings/python/cntk\internal\swig_helper.py
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 92
@@ -190,7 +190,7 @@ items:
     id: default_input_variable_dynamic_axes
     path: bindings/python/cntk\internal\swig_helper.py
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 136
@@ -204,7 +204,7 @@ items:
 
         '
       type:
-      - tuple of @cntk.axis.Axis
+      - tuple of cntk.axis.Axis
   type: method
   uid: cntk.axis.Axis.default_input_variable_dynamic_axes
 - class: cntk.axis.Axis
@@ -217,7 +217,7 @@ items:
     id: is_batch_axis
     path: null
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: null
       repo: https://github.com/Microsoft/CNTK.git
     startLine: null
@@ -243,7 +243,7 @@ items:
     id: is_ordered
     path: null
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: null
       repo: https://github.com/Microsoft/CNTK.git
     startLine: null
@@ -270,7 +270,7 @@ items:
     id: is_sequence_axis
     path: null
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: null
       repo: https://github.com/Microsoft/CNTK.git
     startLine: null
@@ -296,7 +296,7 @@ items:
     id: is_static_axis
     path: null
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: null
       repo: https://github.com/Microsoft/CNTK.git
     startLine: null
@@ -322,7 +322,7 @@ items:
     id: name
     path: null
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: null
       repo: https://github.com/Microsoft/CNTK.git
     startLine: null
@@ -348,7 +348,7 @@ items:
     id: new_leading_axis
     path: bindings/python/cntk\internal\swig_helper.py
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 172
@@ -375,7 +375,7 @@ items:
     id: new_unique_dynamic_axis
     path: bindings/python/cntk\internal\swig_helper.py
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 158
@@ -409,7 +409,7 @@ items:
     id: static_axis_index
     path: bindings/python/cntk\axis.py
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: bindings/python/cntk\axis.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 80
@@ -446,7 +446,7 @@ items:
     id: unknown_dynamic_axes
     path: bindings/python/cntk\internal\swig_helper.py
     remote:
-      branch: release/2.1
+      branch: release/2.3
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 147
@@ -460,7 +460,7 @@ items:
 
         '
       type:
-      - tuple of @cntk.axis.Axis
+      - tuple of cntk.axis.Axis
   type: method
   uid: cntk.axis.Axis.unknown_dynamic_axes
 references:

@@ -1,0 +1,176 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.backward
+  - cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.forward
+  - cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.gradFunc
+  - cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.infer_outputs
+  - cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.signFunc
+  class: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - inheritance:
+          - type: builtins.object
+          type: cntk.cntk_py.IDictionarySerializable
+        type: cntk.cntk_py.Function
+      type: cntk.ops.functions.Function
+    type: cntk.ops.functions.UserFunction
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: SignWithEstimation
+  source:
+    id: SignWithEstimation
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.3
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 12
+  summary: '
+
+
+
+
+    '
+  syntax:
+    content: SignWithEstimation(arg, name='SignWithEstimation')
+  type: class
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+- class: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.backward
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: backward
+  source:
+    id: backward
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.3
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 57
+  syntax:
+    content: backward(state, root_gradients)
+    parameters:
+    - id: self
+    - id: state
+    - id: root_gradients
+  type: method
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.backward
+- class: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.forward
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: forward
+  source:
+    id: forward
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.3
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 46
+  syntax:
+    content: forward(argument, device, outputs_to_retain)
+    parameters:
+    - id: self
+    - id: argument
+    - id: device
+    - id: outputs_to_retain
+  type: method
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.forward
+- class: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.gradFunc
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: gradFunc
+  source:
+    id: gradFunc
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.3
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 33
+  syntax:
+    content: gradFunc(arg)
+    parameters:
+    - id: self
+    - id: arg
+  type: method
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.gradFunc
+- class: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.infer_outputs
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: infer_outputs
+  source:
+    id: infer_outputs
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.3
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 68
+  syntax:
+    content: infer_outputs()
+    parameters:
+    - id: self
+  type: method
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.infer_outputs
+- class: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.signFunc
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: signFunc
+  source:
+    id: signFunc
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.3
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 24
+  syntax:
+    content: signFunc(arg)
+    parameters:
+    - id: self
+    - id: arg
+  type: method
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.signFunc
+references:
+- fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.backward
+  isExternal: false
+  name: backward
+  parent: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.backward
+- fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.forward
+  isExternal: false
+  name: forward
+  parent: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.forward
+- fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.gradFunc
+  isExternal: false
+  name: gradFunc
+  parent: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.gradFunc
+- fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.infer_outputs
+  isExternal: false
+  name: infer_outputs
+  parent: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.infer_outputs
+- fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.signFunc
+  isExternal: false
+  name: signFunc
+  parent: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation.signFunc

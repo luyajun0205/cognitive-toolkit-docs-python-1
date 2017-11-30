@@ -1,0 +1,47 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.netopt.custom_convolution_ops
+  - cntk.contrib.netopt.factorization
+  - cntk.contrib.netopt.quantization
+  - cntk.contrib.netopt.test
+  fullName: cntk.contrib.netopt
+  langs:
+  - python
+  module: cntk.contrib.netopt
+  name: netopt
+  source:
+    id: netopt
+    path: bindings/python/cntk\contrib\netopt\__init__.py
+    remote:
+      branch: release/2.3
+      path: bindings/python/cntk\contrib\netopt\__init__.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 0
+  summary: 'Netowrk optimization alogorithms.
+
+    '
+  type: package
+  uid: cntk.contrib.netopt
+references:
+- fullName: cntk.contrib.netopt.custom_convolution_ops
+  isExternal: false
+  name: custom_convolution_ops
+  parent: cntk.contrib.netopt
+  uid: cntk.contrib.netopt.custom_convolution_ops
+- fullName: cntk.contrib.netopt.factorization
+  isExternal: false
+  name: factorization
+  parent: cntk.contrib.netopt
+  uid: cntk.contrib.netopt.factorization
+- fullName: cntk.contrib.netopt.quantization
+  isExternal: false
+  name: quantization
+  parent: cntk.contrib.netopt
+  uid: cntk.contrib.netopt.quantization
+- fullName: cntk.contrib.netopt.test
+  isExternal: false
+  name: test
+  parent: cntk.contrib.netopt
+  uid: cntk.contrib.netopt.test
