@@ -1,0 +1,89 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.netopt.test.factorization_test.test_factor_dense
+  - cntk.contrib.netopt.test.factorization_test.test_factor_dense_for_prediction
+  - cntk.contrib.netopt.test.factorization_test.test_svd_factorization
+  fullName: cntk.contrib.netopt.test.factorization_test
+  langs:
+  - python
+  module: cntk.contrib.netopt.test.factorization_test
+  name: factorization_test
+  source:
+    id: factorization_test
+    path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 0
+  type: module
+  uid: cntk.contrib.netopt.test.factorization_test
+- fullName: cntk.contrib.netopt.test.factorization_test.test_factor_dense
+  langs:
+  - python
+  module: cntk.contrib.netopt.test.factorization_test
+  name: test_factor_dense
+  source:
+    id: test_factor_dense
+    path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 72
+  syntax:
+    content: test_factor_dense()
+  type: function
+  uid: cntk.contrib.netopt.test.factorization_test.test_factor_dense
+- fullName: cntk.contrib.netopt.test.factorization_test.test_factor_dense_for_prediction
+  langs:
+  - python
+  module: cntk.contrib.netopt.test.factorization_test
+  name: test_factor_dense_for_prediction
+  source:
+    id: test_factor_dense_for_prediction
+    path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 107
+  syntax:
+    content: test_factor_dense_for_prediction()
+  type: function
+  uid: cntk.contrib.netopt.test.factorization_test.test_factor_dense_for_prediction
+- fullName: cntk.contrib.netopt.test.factorization_test.test_svd_factorization
+  langs:
+  - python
+  module: cntk.contrib.netopt.test.factorization_test
+  name: test_svd_factorization
+  source:
+    id: test_svd_factorization
+    path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\test\factorization_test.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 48
+  syntax:
+    content: test_svd_factorization()
+  type: function
+  uid: cntk.contrib.netopt.test.factorization_test.test_svd_factorization
+references:
+- fullName: cntk.contrib.netopt.test.factorization_test.test_factor_dense
+  isExternal: false
+  name: test_factor_dense
+  parent: cntk.contrib.netopt.test.factorization_test
+  uid: cntk.contrib.netopt.test.factorization_test.test_factor_dense
+- fullName: cntk.contrib.netopt.test.factorization_test.test_factor_dense_for_prediction
+  isExternal: false
+  name: test_factor_dense_for_prediction
+  parent: cntk.contrib.netopt.test.factorization_test
+  uid: cntk.contrib.netopt.test.factorization_test.test_factor_dense_for_prediction
+- fullName: cntk.contrib.netopt.test.factorization_test.test_svd_factorization
+  isExternal: false
+  name: test_svd_factorization
+  parent: cntk.contrib.netopt.test.factorization_test
+  uid: cntk.contrib.netopt.test.factorization_test.test_svd_factorization

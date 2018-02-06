@@ -1,0 +1,68 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.netopt.test.quantization_test.test_binarization
+  - cntk.contrib.netopt.test.quantization_test.test_native_convolution
+  fullName: cntk.contrib.netopt.test.quantization_test
+  langs:
+  - python
+  module: cntk.contrib.netopt.test.quantization_test
+  name: quantization_test
+  source:
+    id: quantization_test
+    path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 0
+  type: module
+  uid: cntk.contrib.netopt.test.quantization_test
+- fullName: cntk.contrib.netopt.test.quantization_test.test_binarization
+  langs:
+  - python
+  module: cntk.contrib.netopt.test.quantization_test
+  name: test_binarization
+  source:
+    id: test_binarization
+    path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 52
+  syntax:
+    content: test_binarization()
+  type: function
+  uid: cntk.contrib.netopt.test.quantization_test.test_binarization
+- fullName: cntk.contrib.netopt.test.quantization_test.test_native_convolution
+  langs:
+  - python
+  module: cntk.contrib.netopt.test.quantization_test
+  name: test_native_convolution
+  source:
+    id: test_native_convolution
+    path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\test\quantization_test.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 71
+  syntax:
+    content: test_native_convolution(tmpdir)
+    parameters:
+    - id: tmpdir
+  type: function
+  uid: cntk.contrib.netopt.test.quantization_test.test_native_convolution
+references:
+- fullName: cntk.contrib.netopt.test.quantization_test.test_binarization
+  isExternal: false
+  name: test_binarization
+  parent: cntk.contrib.netopt.test.quantization_test
+  uid: cntk.contrib.netopt.test.quantization_test.test_binarization
+- fullName: cntk.contrib.netopt.test.quantization_test.test_native_convolution
+  isExternal: false
+  name: test_native_convolution
+  parent: cntk.contrib.netopt.test.quantization_test
+  uid: cntk.contrib.netopt.test.quantization_test.test_native_convolution

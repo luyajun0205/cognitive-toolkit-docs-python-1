@@ -1,0 +1,228 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.netopt.quantization.binarize_convolution
+  - cntk.contrib.netopt.quantization.binary_convolution
+  - cntk.contrib.netopt.quantization.convert_to_binary_convolution
+  - cntk.contrib.netopt.quantization.convert_to_native_binary_convolution
+  fullName: cntk.contrib.netopt.quantization
+  langs:
+  - python
+  module: cntk.contrib.netopt.quantization
+  name: quantization
+  source:
+    id: quantization
+    path: bindings/python/cntk\contrib\netopt\quantization.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\quantization.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 0
+  type: module
+  uid: cntk.contrib.netopt.quantization
+- fullName: cntk.contrib.netopt.quantization.binarize_convolution
+  langs:
+  - python
+  module: cntk.contrib.netopt.quantization
+  name: binarize_convolution
+  source:
+    id: binarize_convolution
+    path: bindings/python/cntk\contrib\netopt\quantization.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\quantization.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 5
+  summary: 'Replace Convolution layers in the model to Halide implementations of
+
+    binarized convolutions.
+
+    '
+  syntax:
+    content: binarize_convolution(model, train_function, filter_function=None)
+    parameters:
+    - description: 'model that needs convolutions to be optimized.
+
+        '
+      id: model
+    - description: 'this is a two step process. First, convert the model
+
+        to binary convolution and next, transform it to the
+
+        Halide implementation. Between above steps,
+
+        we need to train the model to get the best results.
+
+        train_function provides this functionality.
+
+        '
+      id: train_function
+    - defaultValue: None
+      description: 'filter layers in the model to apply the binarization.
+
+        '
+      id: filter_function
+    return:
+      description: 'A model with Halid operators.
+
+        '
+  type: function
+  uid: cntk.contrib.netopt.quantization.binarize_convolution
+- fullName: cntk.contrib.netopt.quantization.binary_convolution
+  langs:
+  - python
+  module: cntk.contrib.netopt.quantization
+  name: binary_convolution
+  source:
+    id: binary_convolution
+    path: bindings/python/cntk\contrib\netopt\quantization.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\quantization.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 139
+  summary: 'Creates a binary convolution function based on the input parameters.
+
+    '
+  syntax:
+    content: binary_convolution(filter_shape, num_filters=1, channels=1, init=<cntk.cntk_py.Dictionary;
+      proxy of <Swig Object of type 'CNTK::ImageTransform *'> >, pad=False, strides=1,
+      name='BinaryConvolution')
+    parameters:
+    - description: 'shape of the filter
+
+        '
+      id: filter_shape
+    - defaultValue: '1'
+      description: 'number of filters to use
+
+        '
+      id: num_filters
+    - defaultValue: '1'
+      description: 'initialization function for the filter
+
+        '
+      id: init
+    - defaultValue: <cntk.cntk_py.Dictionary; proxy of <Swig Object of type 'CNTK::ImageTransform
+        *' at 0x000000CBB443BD20> >
+      description: 'padding enabled or not for the filter
+
+        '
+      id: pad
+    - defaultValue: 'False'
+      description: 'overlap for this filter
+
+        '
+      id: strides
+    - defaultValue: '1'
+      description: 'name given to the binary convolution.
+
+        '
+      id: name
+    - defaultValue: BinaryConvolution
+      id: name
+    return:
+      description: 'a function for performing binary convolution
+
+        '
+  type: function
+  uid: cntk.contrib.netopt.quantization.binary_convolution
+- fullName: cntk.contrib.netopt.quantization.convert_to_binary_convolution
+  langs:
+  - python
+  module: cntk.contrib.netopt.quantization
+  name: convert_to_binary_convolution
+  source:
+    id: convert_to_binary_convolution
+    path: bindings/python/cntk\contrib\netopt\quantization.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\quantization.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 79
+  summary: 'Replace convolution functions in the model with binary convolutions.
+
+    The function replaces the convolution function inside the
+
+    cntk.layers.convolution block without changing the block structure.
+
+    The output model has python version of the binarized convolutions.
+
+    '
+  syntax:
+    content: convert_to_binary_convolution(model, filter_function=None)
+    parameters:
+    - description: 'model that needs to be binarized.
+
+        '
+      id: model
+    - defaultValue: None
+      description: 'filter layers in the model to apply the binarization
+
+        '
+      id: filter_function
+    return:
+      description: 'a model with convolution functions replaced by binary convolutions.
+
+        '
+  type: function
+  uid: cntk.contrib.netopt.quantization.convert_to_binary_convolution
+- fullName: cntk.contrib.netopt.quantization.convert_to_native_binary_convolution
+  langs:
+  - python
+  module: cntk.contrib.netopt.quantization
+  name: convert_to_native_binary_convolution
+  source:
+    id: convert_to_native_binary_convolution
+    path: bindings/python/cntk\contrib\netopt\quantization.py
+    remote:
+      branch: release/2.4
+      path: bindings/python/cntk\contrib\netopt\quantization.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 29
+  summary: 'Clones a binary convolution network, sharing the original parameters
+
+    but substitutes the python ''BinaryConvolution'' Function instances
+
+    used during training with faster C++ NativeBinaryConvolveFunction
+
+    instances that uses optimized binary convolution implementations
+
+    generated using the Halide framework
+
+    '
+  syntax:
+    content: convert_to_native_binary_convolution(model)
+    parameters:
+    - description: 'model that needs convolutions to be substituted.
+
+        '
+      id: model
+    return:
+      description: 'A model with Halid operators.
+
+        '
+  type: function
+  uid: cntk.contrib.netopt.quantization.convert_to_native_binary_convolution
+references:
+- fullName: cntk.contrib.netopt.quantization.binarize_convolution
+  isExternal: false
+  name: binarize_convolution
+  parent: cntk.contrib.netopt.quantization
+  uid: cntk.contrib.netopt.quantization.binarize_convolution
+- fullName: cntk.contrib.netopt.quantization.binary_convolution
+  isExternal: false
+  name: binary_convolution
+  parent: cntk.contrib.netopt.quantization
+  uid: cntk.contrib.netopt.quantization.binary_convolution
+- fullName: cntk.contrib.netopt.quantization.convert_to_binary_convolution
+  isExternal: false
+  name: convert_to_binary_convolution
+  parent: cntk.contrib.netopt.quantization
+  uid: cntk.contrib.netopt.quantization.convert_to_binary_convolution
+- fullName: cntk.contrib.netopt.quantization.convert_to_native_binary_convolution
+  isExternal: false
+  name: convert_to_native_binary_convolution
+  parent: cntk.contrib.netopt.quantization
+  uid: cntk.contrib.netopt.quantization.convert_to_native_binary_convolution
