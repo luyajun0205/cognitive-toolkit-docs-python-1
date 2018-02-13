@@ -272,7 +272,8 @@ items:
         '
       id: axis
       type:
-      - 'int or @cntk.axis.Axis
+      - int
+      - 'cntk.axis.Axis
 
         , optional'
     - description: 'the name of the Function instance in the network
@@ -425,7 +426,7 @@ items:
 
     >>> # after training, use the logits for predictions
 
-    >>> logits = C.times(W, C.reshape(x, (xdim, 1))) + b
+    >>> logits = C.times_transpose(x, W) + C.reshape(b, -1)
 
     ```
 

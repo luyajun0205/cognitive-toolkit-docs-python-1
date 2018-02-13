@@ -109,7 +109,8 @@ items:
         '
       id: schedule
       type:
-      - int or list
+      - int
+      - list
     - description: 'number of samples as a scheduling unit.
 
         '
@@ -134,7 +135,7 @@ items:
       branch: master
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 339
+    startLine: 340
   summary: 'A factory function to create a training session object.
 
     '

@@ -44,7 +44,8 @@ items:
         '
       id: minibatch_size
       type:
-      - 'int or @cntk.cntk_py.minibatch_size_schedule
+      - int
+      - 'cntk.cntk_py.minibatch_size_schedule
 
         , defaults to 32'
     - description: 'Callback that will
@@ -94,7 +95,8 @@ items:
         '
       id: mb_size
       type:
-      - 'int or @cntk.cntk_py.minibatch_size_schedule
+      - int
+      - 'cntk.cntk_py.minibatch_size_schedule
 
         , defaults to 32'
   type: class

@@ -184,6 +184,7 @@ as easy as that!
 
 Now that we've seen some of the basics of setting up and training a network using the CNTK Python API, let's look at a more interesting deep 
 learning problem in more detail (for the full example above along with the function to generate random data, please see 
+
 [Tutorials/NumpyInterop/FeedForwardNet.py](https://github.com/Microsoft/CNTK/blob/release/2.3/Tutorials/NumpyInterop/FeedForwardNet.py)).
 
 

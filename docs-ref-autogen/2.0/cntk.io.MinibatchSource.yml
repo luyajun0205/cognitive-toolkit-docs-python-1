@@ -23,7 +23,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 117
+    startLine: 112
   summary: '
 
 
@@ -44,7 +44,8 @@ items:
         '
       id: deserializers
       type:
-      - a single deserializer or a list
+      - a single deserializer
+      - a list
     - description: 'The maximum number of input samples
 
         (not ''label samples'') the reader can produce. After this number has been
@@ -229,7 +230,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 307
+    startLine: 302
   summary: 'Gets the checkpoint state of the MinibatchSource.
 
     '
@@ -280,7 +281,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 252
+    startLine: 247
   summary: 'Reads a minibatch that contains data for all input streams.  The
 
     minibatch size is specified in terms of #samples and/or #sequences for
@@ -369,7 +370,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 318
+    startLine: 313
   summary: 'Restores the MinibatchSource state from the specified checkpoint.
 
     '
@@ -397,7 +398,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 226
+    startLine: 221
   summary: 'Gets the description of the stream with given name.
 
     Throws an exception if there are none or multiple streams with this
@@ -435,7 +436,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\io\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 203
+    startLine: 198
   summary: 'Describes the streams this minibatch source produces.
 
     '

@@ -48,7 +48,8 @@ items:
         '
       id: freq
       type:
-      - int or None, default None
+      - int
+      - None, default None
     - description: 'directory where to create a TensorBoard event file.
 
         '
@@ -63,13 +64,15 @@ items:
         '
       id: rank
       type:
-      - int or None, default None
+      - int
+      - None, default None
     - description: 'model graph to plot.
 
         '
       id: model
       type:
-      - "cntk.ops.functions.Function\n or None, default None"
+      - cntk.ops.functions.Function
+      - None, default None
   type: class
   uid: cntk.logging.progress_print.TensorBoardProgressWriter
 - class: cntk.logging.progress_print.TensorBoardProgressWriter

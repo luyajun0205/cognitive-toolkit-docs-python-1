@@ -69,6 +69,18 @@
       "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.1",
       "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.1"
     },
+	{
+      "TopLevelTOC": "docs-ref-autogen/2.3/toc.yml",
+      "ConceptualTOC": "docs-ref-conceptual/2.3/toc.yml",
+      "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.3",
+      "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.3"
+    },
+    {
+      "TopLevelTOC": "docs-ref-autogen/2.4/toc.yml",
+      "ConceptualTOC": "docs-ref-conceptual/2.4/toc.yml",
+      "ReferenceTOCUrl": "/python/api/cognitive-toolkit/toc.json?view=cntk-py-2.4",
+      "ConceptualTOCUrl": "/python/cognitive-toolkit/toc.json?view=cntk-py-2.4"
+    },
     {
       "TopLevelTOC": "docs-ref-autogen/latest/toc.yml",
       "ConceptualTOC": "docs-ref-conceptual/latest/toc.yml",

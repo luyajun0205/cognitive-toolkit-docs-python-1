@@ -20,9 +20,6 @@ items:
       path: bindings/python/cntk\variables.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 0
-  summary: 'CNTK variables, parameters, constants, and records.
-
-    '
   type: module
   uid: cntk.variables
 references:

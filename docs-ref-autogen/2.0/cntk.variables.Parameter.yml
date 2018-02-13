@@ -31,7 +31,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\variables.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 331
+    startLine: 326
   summary: 'A trainable parameter. It can be a scalar, vector, matrix, or tensor
 
     of floating point numbers that can be modified by a training
@@ -70,7 +70,8 @@ items:
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'the device on which the values should reside.
 
         '

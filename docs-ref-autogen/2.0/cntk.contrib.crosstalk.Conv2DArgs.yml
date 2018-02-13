@@ -21,10 +21,10 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 53
+    startLine: 51
   summary: "Args inside Conv2D variable. Conv2D output is in NCHW format\n\nW\n  \
-    \ The numpy ndarray of filter parameter in shape (num_filters, filter_w, filter_h,))\n\
-    \nb\n   The numpy ndarray of bias parameter in shape (num_filters,)\n"
+    \ The filter parameter in shape (num_filters, filter_w, filter_h,))\n\nb\n   The\
+    \ bias parameter in shape (num_filters,)\n"
   syntax: {}
   type: class
   uid: cntk.contrib.crosstalk.Conv2DArgs

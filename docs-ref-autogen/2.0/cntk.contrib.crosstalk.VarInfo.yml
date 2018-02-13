@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.contrib.crosstalk.VarInfo
+  fullName: cntk.contrib.crosstalk.VarInfo
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: builtins.tuple
+    type: cntk.contrib.crosstalk.VarInfo
+  langs:
+  - python
+  module: cntk.contrib.crosstalk
+  name: VarInfo
+  source:
+    id: VarInfo
+    path: bindings/python/cntk\contrib\crosstalk\__init__.py
+    remote:
+      branch: release/2.0
+      path: bindings/python/cntk\contrib\crosstalk\__init__.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 17
+  summary: "Variable information\n\nvar\n   The variable object\n\ntype\n   The type\
+    \ of the variable object\n\nattr\n   The attributes for variable setter/getter\n"
+  syntax: {}
+  type: class
+  uid: cntk.contrib.crosstalk.VarInfo
+references: []

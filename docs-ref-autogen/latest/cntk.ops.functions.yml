@@ -5,6 +5,7 @@ items:
   - cntk.ops.functions.BlockFunction
   - cntk.ops.functions.CloneMethod
   - cntk.ops.functions.Function
+  - cntk.ops.functions.ModelFormat
   - cntk.ops.functions.UserFunction
   - cntk.ops.functions.load_model
   - cntk.ops.functions.native_user_function
@@ -40,7 +41,7 @@ items:
       branch: master
       path: bindings/python/cntk\ops\functions.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 1553
+    startLine: 1574
   summary: 'Decorator for defining a @Function as a BlockFunction. Same as @Function,
     but wrap the content into an @cntk.ops.as_block.
 
@@ -64,12 +65,12 @@ items:
       branch: master
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 1602
+    startLine: 1623
   summary: 'Alias for @cntk.ops.functions.Function.load.
 
     '
   syntax:
-    content: load_model(model, device=None)
+    content: 'load_model(model, device=None, format=<ModelFormat.CNTKv2: 0>)'
   type: function
   uid: cntk.ops.functions.load_model
 - fullName: cntk.ops.functions.native_user_function
@@ -84,7 +85,7 @@ items:
       branch: master
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 1579
+    startLine: 1600
   summary: 'Creates an instance of a user-defined Function previously registered using
     the
 
@@ -137,7 +138,7 @@ items:
       branch: master
       path: bindings/python/cntk\internal\swig_helper.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 1559
+    startLine: 1580
   summary: 'Registers a native user-defined Function that can be subsequently instantiated
 
     using the ''native_user_function'' method.
@@ -198,6 +199,11 @@ references:
   name: Function
   parent: cntk.ops.functions
   uid: cntk.ops.functions.Function
+- fullName: cntk.ops.functions.ModelFormat
+  isExternal: false
+  name: ModelFormat
+  parent: cntk.ops.functions
+  uid: cntk.ops.functions.ModelFormat
 - fullName: cntk.ops.functions.UserFunction
   isExternal: false
   name: UserFunction

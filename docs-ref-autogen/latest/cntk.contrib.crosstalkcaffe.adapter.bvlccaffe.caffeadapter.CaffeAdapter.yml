@@ -21,7 +21,7 @@ items:
       branch: master
       path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 339
+    startLine: 342
   summary: 'Adapt Caffe prototxt and weights into uniform format
 
 
@@ -44,7 +44,7 @@ items:
       branch: master
       path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 393
+    startLine: 396
   summary: '   Adapt Caffe solver into CNTK format
 
     '
@@ -72,7 +72,7 @@ items:
       branch: master
       path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 352
+    startLine: 355
   summary: '   Load prototxt and weights of Caffe, parsing them into uniform model
 
     '

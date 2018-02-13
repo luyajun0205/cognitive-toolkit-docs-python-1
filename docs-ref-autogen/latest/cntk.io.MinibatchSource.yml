@@ -4,7 +4,6 @@ items:
 - children:
   - cntk.io.MinibatchSource.current_position
   - cntk.io.MinibatchSource.get_checkpoint_state
-  - cntk.io.MinibatchSource.is_distributed
   - cntk.io.MinibatchSource.next_minibatch
   - cntk.io.MinibatchSource.restore_from_checkpoint
   - cntk.io.MinibatchSource.stream_info
@@ -31,7 +30,6 @@ items:
 
 
 
-
     '
   syntax:
     content: MinibatchSource(deserializers, max_samples=cntk.io.INFINITELY_REPEAT,
@@ -44,7 +42,8 @@ items:
         '
       id: deserializers
       type:
-      - a single deserializer or a list
+      - a single deserializer
+      - a list
     - description: 'The maximum number of input samples
 
         (not ''label samples'') the reader can produce. After this number has been
@@ -243,26 +242,6 @@ items:
         '
   type: method
   uid: cntk.io.MinibatchSource.get_checkpoint_state
-- class: cntk.io.MinibatchSource
-  fullName: cntk.io.MinibatchSource.is_distributed
-  langs:
-  - python
-  module: cntk.io
-  name: is_distributed
-  source:
-    id: is_distributed
-    path: null
-    remote:
-      branch: master
-      path: null
-      repo: https://github.com/Microsoft/CNTK.git
-    startLine: null
-  summary: 'Whether the minibatch source is running distributed
-
-    '
-  syntax: {}
-  type: attribute
-  uid: cntk.io.MinibatchSource.is_distributed
 - class: cntk.io.MinibatchSource
   fullName: cntk.io.MinibatchSource.next_minibatch
   langs:
@@ -482,11 +461,6 @@ references:
   name: get_checkpoint_state
   parent: cntk.io.MinibatchSource
   uid: cntk.io.MinibatchSource.get_checkpoint_state
-- fullName: cntk.io.MinibatchSource.is_distributed
-  isExternal: false
-  name: is_distributed
-  parent: cntk.io.MinibatchSource
-  uid: cntk.io.MinibatchSource.is_distributed
 - fullName: cntk.io.MinibatchSource.next_minibatch
   isExternal: false
   name: next_minibatch

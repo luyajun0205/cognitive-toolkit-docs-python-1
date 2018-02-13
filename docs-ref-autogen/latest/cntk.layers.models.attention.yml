@@ -33,7 +33,7 @@ items:
       branch: master
       path: bindings/python/cntk\layers\models\attention.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 23
+    startLine: 24
   summary: 'Layer factory function to create a function object that implements an
     attention model
 

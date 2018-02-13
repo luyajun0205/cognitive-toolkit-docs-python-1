@@ -50,7 +50,8 @@ items:
         '
       id: root
       type:
-      - "cntk.ops.functions.Function\n or @cntk.variables.Variable"
+      - cntk.ops.functions.Function
+      - cntk.variables.Variable
     - description: 'function that takes a node as
 
         argument and returns `True` if that node should be returned.
@@ -58,7 +59,8 @@ items:
         '
       id: visitor
       type:
-      - Python function or lambda
+      - Python function
+      - lambda
     - defaultValue: '0'
       description: 'how deep into the block hierarchy the DFS
 
@@ -102,7 +104,8 @@ items:
         '
       id: node
       type:
-      - "cntk.ops.functions.Function\n or @cntk.variables.Variable"
+      - cntk.ops.functions.Function
+      - cntk.variables.Variable
     - description: 'name for which we are search nodes
 
         '
@@ -152,7 +155,8 @@ items:
         '
       id: node
       type:
-      - "cntk.ops.functions.Function\n or @cntk.variables.Variable"
+      - cntk.ops.functions.Function
+      - cntk.variables.Variable
     - description: 'name for which we are search nodes
 
         '

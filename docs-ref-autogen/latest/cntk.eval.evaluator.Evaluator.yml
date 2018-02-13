@@ -77,7 +77,7 @@ items:
       branch: master
       path: bindings/python/cntk\eval\evaluator.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 86
+    startLine: 88
   summary: 'Updates the progress writers with the summary of test progress since start
     and resets the internal
 
@@ -108,12 +108,14 @@ items:
     \ See @cntk.ops.functions.Function.forward for examples on passing input data.\
     \ \n"
   syntax:
-    content: test_minibatch(arguments, device=None)
+    content: test_minibatch(arguments, device=None, distributed=False)
     parameters:
     - id: self
     - id: arguments
     - defaultValue: None
       id: device
+    - defaultValue: 'False'
+      id: distributed
     return:
       description: 'the average evaluation criterion value per sample for the
 

@@ -74,7 +74,8 @@ items:
         '
       id: freq
       type:
-      - int or None, default None
+      - int
+      - None, default None
     - description: 'Only start printing after the training minibatch number is greater
         or equal to
 
@@ -97,7 +98,8 @@ items:
         '
       id: log_to_file
       type:
-      - string or None, default None
+      - string
+      - None, default None
     - description: 'set this to distributed.rank if you are using distributed
 
         parallelism -- each rank''s log will go to separate file.
@@ -105,7 +107,8 @@ items:
         '
       id: rank
       type:
-      - int or None, default None
+      - int
+      - None, default None
     - description: 'If True output a progress message every 10 seconds or so to stdout.
 
         '
@@ -127,7 +130,8 @@ items:
         '
       id: test_freq
       type:
-      - int or None, default None
+      - int
+      - None, default None
     - description: 'similar to `first`, but applies to printing intermediate test
         results.
 
@@ -148,7 +152,8 @@ items:
         '
       id: distributed_freq
       type:
-      - int or None, default None
+      - int
+      - None, default None
     - description: 'similar to `first`, but applies to printing distributed-training
 
         worker synchronization info.
@@ -601,7 +606,8 @@ items:
         '
       id: metric
       type:
-      - float or None
+      - float
+      - None
   type: method
   uid: cntk.logging.progress_print.ProgressPrinter.update
 - class: cntk.logging.progress_print.ProgressPrinter

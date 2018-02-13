@@ -53,7 +53,8 @@ items:
         '
       id: mb_size
       type:
-      - "cntk.cntk_py.minibatch_size_schedule\n or int"
+      - cntk.cntk_py.minibatch_size_schedule
+      - int
     - description: 'mapping between input variables and input streams
 
         '

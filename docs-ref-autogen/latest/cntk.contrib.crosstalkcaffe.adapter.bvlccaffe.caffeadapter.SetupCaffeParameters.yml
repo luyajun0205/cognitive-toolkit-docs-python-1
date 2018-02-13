@@ -260,7 +260,7 @@ items:
       branch: master
       path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 260
+    startLine: 263
   summary: '   The dropout parameter setup from Caffe to CNTK
 
     '
@@ -308,7 +308,7 @@ items:
       branch: master
       path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 277
+    startLine: 280
   summary: '   The lrn parameter setup from Caffe to CNTK
 
     '
@@ -356,7 +356,7 @@ items:
       branch: master
       path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 243
+    startLine: 246
   summary: '   The plus parameter setup from Caffe to CNTK
 
     '
@@ -452,7 +452,7 @@ items:
       branch: master
       path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 299
+    startLine: 302
   summary: '   The psroipooling parameter setup from Caffe to CNTK
 
     '
@@ -500,7 +500,7 @@ items:
       branch: master
       path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 226
+    startLine: 229
   summary: '   The ReLU parameter setup from Caffe to CNTK
 
     '
@@ -548,7 +548,7 @@ items:
       branch: master
       path: bindings/python/cntk\contrib\crosstalkcaffe\adapter\bvlccaffe\caffeadapter.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 319
+    startLine: 322
   summary: '   The softmax parameter setup from Caffe to CNTK
 
     '

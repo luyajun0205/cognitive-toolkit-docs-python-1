@@ -26,7 +26,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\variables.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 424
+    startLine: 419
   summary: 'A constant value. It can be a scalar, vector, matrix, or tensor
 
     of floating point numbers that cannot be modified.
@@ -47,13 +47,17 @@ items:
         '
       id: value
       type:
-      - np.ndarray or list or float or int
+      - np.ndarray
+      - list
+      - float
+      - int
     - description: 'data type to store the values as.
 
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'the device on which the values should reside.
 
         '

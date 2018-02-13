@@ -70,7 +70,8 @@ items:
         '
       id: dtype
       type:
-      - np.float32 or np.float64
+      - np.float32
+      - np.float64
     - description: 'the device on which the values should reside.
 
         '
