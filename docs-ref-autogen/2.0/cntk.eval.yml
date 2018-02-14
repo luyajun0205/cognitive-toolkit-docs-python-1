@@ -16,9 +16,6 @@ items:
       path: bindings/python/cntk\eval\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 0
-  summary: 'Utilities for model evaluation.
-
-    '
   type: package
   uid: cntk.eval
 references:

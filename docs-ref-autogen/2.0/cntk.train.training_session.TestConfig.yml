@@ -34,7 +34,8 @@ items:
         '
       id: minibatch_size
       type:
-      - 'int or @cntk.cntk_py.minibatch_size_schedule
+      - int
+      - 'cntk.cntk_py.minibatch_size_schedule
 
         , defaults to 32'
     - description: 'mapping between input variables and input streams
@@ -66,7 +67,8 @@ items:
         '
       id: mb_size
       type:
-      - 'int or @cntk.cntk_py.minibatch_size_schedule
+      - int
+      - 'cntk.cntk_py.minibatch_size_schedule
 
         , defaults to 32'
   type: class

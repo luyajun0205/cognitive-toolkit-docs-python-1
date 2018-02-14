@@ -19,10 +19,14 @@
         uid: cntk.contrib.crosstalk.Crosstalk
       - name: cntk.contrib.crosstalk.EmbedAttr
         uid: cntk.contrib.crosstalk.EmbedAttr
+      - name: cntk.contrib.crosstalk.FuncInfo
+        uid: cntk.contrib.crosstalk.FuncInfo
       - name: cntk.contrib.crosstalk.RnnArgs
         uid: cntk.contrib.crosstalk.RnnArgs
       - name: cntk.contrib.crosstalk.RnnAttr
         uid: cntk.contrib.crosstalk.RnnAttr
+      - name: cntk.contrib.crosstalk.VarInfo
+        uid: cntk.contrib.crosstalk.VarInfo
       name: cntk.contrib.crosstalk
       uid: cntk.contrib.crosstalk
     name: contrib

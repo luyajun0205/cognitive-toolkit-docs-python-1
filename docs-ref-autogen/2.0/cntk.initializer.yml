@@ -25,9 +25,6 @@ items:
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 0
-  summary: 'Initializers of parameters.
-
-    '
   type: module
   uid: cntk.initializer
 - fullName: cntk.initializer.bilinear
@@ -42,7 +39,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 153
+    startLine: 149
   summary: 'initializer
 
     '
@@ -81,7 +78,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 93
+    startLine: 89
   summary: 'initializer
 
     '
@@ -139,7 +136,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 73
+    startLine: 69
   summary: 'Glorot initializer
 
     '
@@ -197,7 +194,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 133
+    startLine: 129
   summary: 'initializer
 
     '
@@ -254,7 +251,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 113
+    startLine: 109
   summary: 'initializer
 
     '
@@ -311,7 +308,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 167
+    startLine: 163
   summary: 'override output_rank and filter_rank specification in a random initializer
 
     constructed without an explicit output_rank and filter_rank specification
@@ -358,7 +355,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 34
+    startLine: 30
   summary: 'Normal initializer
 
     '
@@ -412,7 +409,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 187
+    startLine: 183
   summary: 'Truncated normal initializer. The resulting values are drawn from
 
     a truncated normal distribution and are always within two
@@ -456,7 +453,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 16
+    startLine: 12
   summary: 'Uniform initializer
 
     '
@@ -498,7 +495,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\initializer.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 53
+    startLine: 49
   summary: 'Xavier initializer
 
     '

@@ -78,7 +78,10 @@ items:
         '
       id: criterion
       type:
-      - "tuple of @cntk.ops.functions.Function\n or @cntk.variables.Variable\n"
+      - 'tuple of @cntk.ops.functions.Function
+
+        '
+      - cntk.variables.Variable
     - description: 'list of learners from @cntk.learners
 
         '
@@ -94,7 +97,8 @@ items:
         '
       id: progress_writers
       type:
-      - progress writer or list of them
+      - progress writer
+      - list of them
   type: class
   uid: cntk.train.trainer.Trainer
 - class: cntk.train.trainer.Trainer

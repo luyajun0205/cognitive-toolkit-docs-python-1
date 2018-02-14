@@ -32,19 +32,6 @@
           "**/*.md",
           "**/*.yml"
         ],
-        "src": "docs-ref-conceptual/latest",
-        "version": "cntk-py",
-        "dest": "cognitive-toolkit",
-        "exclude": [
-          "**/obj/**",
-          "**/includes/**"
-        ]
-      },
-      {
-        "files": [
-          "**/*.md",
-          "**/*.yml"
-        ],
         "src": "docs-ref-conceptual/2.2",
         "version": "cntk-py-2.2",
         "dest": "cognitive-toolkit",
@@ -53,7 +40,7 @@
           "**/includes/**"
         ]
       },
-	  {
+      {
         "files": [
           "**/*.md",
           "**/*.yml"
@@ -68,6 +55,19 @@
       },
       {
         "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
+        "src": "docs-ref-conceptual/2.4",
+        "version": "cntk-py-2.4",
+        "dest": "cognitive-toolkit",
+        "exclude": [
+          "**/obj/**",
+          "**/includes/**"
+        ]
+      },
+      {
+        "files": [
           "**/*.yml"
         ],
         "src": "docs-ref-autogen/2.0",
@@ -96,8 +96,8 @@
         "files": [
           "**/*.yml"
         ],
-        "src": "docs-ref-autogen/latest",
-        "version": "cntk-py",
+        "src": "docs-ref-autogen/2.2",
+        "version": "cntk-py-2.2",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -109,8 +109,8 @@
         "files": [
           "**/*.yml"
         ],
-        "src": "docs-ref-autogen/2.2",
-        "version": "cntk-py-2.2",
+        "src": "docs-ref-autogen/2.3",
+        "version": "cntk-py-2.3",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -118,12 +118,12 @@
           "**/toc.yml"
         ]
       },
-	  {
+      {
         "files": [
           "**/*.yml"
         ],
-        "src": "docs-ref-autogen/2.3",
-        "version": "cntk-py-2.3",
+        "src": "docs-ref-autogen/2.4",
+        "version": "cntk-py-2.4",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -159,8 +159,8 @@
         "files": [
           "**/toc.yml"
         ],
-        "src": "docs-ref-autogen/latest",
-        "version": "cntk-py",
+        "src": "docs-ref-autogen/2.2",
+        "version": "cntk-py-2.2",
         "dest": "api/cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -171,20 +171,20 @@
         "files": [
           "**/toc.yml"
         ],
-        "src": "docs-ref-autogen/2.2",
-        "version": "cntk-py-2.2",
+        "src": "docs-ref-autogen/2.3",
+        "version": "cntk-py-2.3",
         "dest": "api/cognitive-toolkit",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ]
       },
-	  {
+      {
         "files": [
           "**/toc.yml"
         ],
-        "src": "docs-ref-autogen/2.3",
-        "version": "cntk-py-2.3",
+        "src": "docs-ref-autogen/2.4",
+        "version": "cntk-py-2.4",
         "dest": "api/cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -235,8 +235,8 @@
           "**/*.png",
           "**/*.jpg"
         ],
-        "src": "docs-ref-conceptual/latest",
-        "version": "cntk-py",
+        "src": "docs-ref-conceptual/2.2",
+        "version": "cntk-py-2.2",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -248,21 +248,21 @@
           "**/*.png",
           "**/*.jpg"
         ],
-        "src": "docs-ref-conceptual/2.2",
-        "version": "cntk-py-2.2",
+        "src": "docs-ref-conceptual/2.3",
+        "version": "cntk-py-2.3",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
         ]
       },
-	  {
+      {
         "files": [
           "**/*.png",
           "**/*.jpg"
         ],
-        "src": "docs-ref-conceptual/2.3",
-        "version": "cntk-py-2.3",
+        "src": "docs-ref-conceptual/2.4",
+        "version": "cntk-py-2.4",
         "dest": "cognitive-toolkit",
         "exclude": [
           "**/obj/**",
@@ -277,92 +277,83 @@
       "cntk-py-2.1": {
         "dest": "cntk-py-2.1"
       },
-      "cntk-py": {
-        "dest": "cntk-py"
-      },
       "cntk-py-2.2": {
         "dest": "cntk-py-2.2"
       },
-	  "cntk-py-2.3": {
+      "cntk-py-2.3": {
         "dest": "cntk-py-2.3"
+      },
+      "cntk-py-2.4": {
+        "dest": "cntk-py-2.4"
       }
     },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
       "breadcrumb_path": "/python/breadcrumb/toc.json",
-      "searchScope": ["Cognitive Toolkit"],
+      "searchScope": [
+        "Cognitive Toolkit"
+      ],
       "showPowerShellPicker": "true"
     },
     "fileMetadata": {
       "author": {
         "docs-ref-autogen/2.0/**/*.yml": "mahilleb-msft",
         "docs-ref-autogen/2.1/**/*.yml": "mahilleb-msft",
-        "docs-ref-autogen/latest/**/*.yml": "mahilleb-msft",
-        "docs-ref-autogen/2.2/**/*.yml": "mahilleb-msft",
-		"docs-ref-autogen/2.3/**/*.yml": "mahilleb-msft",
+        "docs-ref-autogen/2.3/**/*.yml": "mahilleb-msft",
+        "docs-ref-autogen/2.4/**/*.yml": "mahilleb-msft",
         "docs-ref-conceptual/2.0/**/*.md": "mahilleb-msft",
         "docs-ref-conceptual/2.1/**/*.md": "mahilleb-msft",
-        "docs-ref-conceptual/latest/**/*.md": "mahilleb-msft",
-        "docs-ref-conceptual/2.2/**/*.md": "mahilleb-msft",
-		"docs-ref-conceptual/2.3/**/*.md": "mahilleb-msft"
+        "docs-ref-conceptual/2.3/**/*.md": "mahilleb-msft",
+        "docs-ref-conceptual/2.4/**/*.md": "mahilleb-msft"
       },
       "ms.author": {
         "docs-ref-autogen/2.0/**/*.yml": "mahilleb",
         "docs-ref-autogen/2.1/**/*.yml": "mahilleb",
-        "docs-ref-autogen/latest/**/*.yml": "mahilleb",
-        "docs-ref-autogen/2.2/**/*.yml": "mahilleb",
-		"docs-ref-autogen/2.3/**/*.yml": "mahilleb",
+        "docs-ref-autogen/2.3/**/*.yml": "mahilleb",
+        "docs-ref-autogen/2.4/**/*.yml": "mahilleb",
         "docs-ref-conceptual/2.0/**/*.md": "mahilleb",
         "docs-ref-conceptual/2.1/**/*.md": "mahilleb",
-        "docs-ref-conceptual/latest/**/*.md": "mahilleb",
-        "docs-ref-conceptual/2.2/**/*.md": "mahilleb",
-		"docs-ref-conceptual/2.3/**/*.md": "mahilleb"
+        "docs-ref-conceptual/2.3/**/*.md": "mahilleb",
+        "docs-ref-conceptual/2.4/**/*.md": "mahilleb"
       },
       "manager": {
         "docs-ref-autogen/2.0/**/*.yml": "chazhang",
         "docs-ref-autogen/2.1/**/*.yml": "chazhang",
-        "docs-ref-autogen/latest/**/*.yml": "chazhang",
-        "docs-ref-autogen/2.2/**/*.yml": "chazhang",
-		"docs-ref-autogen/2.3/**/*.yml": "chazhang",
+        "docs-ref-autogen/2.3/**/*.yml": "chazhang",
+        "docs-ref-autogen/2.4/**/*.yml": "chazhang",
         "docs-ref-conceptual/2.0/**/*.md": "chazhang",
         "docs-ref-conceptual/2.1/**/*.md": "chazhang",
-        "docs-ref-conceptual/latest/**/*.md": "chazhang",
-        "docs-ref-conceptual/2.2/**/*.md": "chazhang",
-		"docs-ref-conceptual/2.3/**/*.md": "chazhang"
+        "docs-ref-conceptual/2.3/**/*.md": "chazhang",
+        "docs-ref-conceptual/2.4/**/*.md": "chazhang"
       },
       "ms.devlang": {
         "docs-ref-autogen/2.0/**/*.yml": "python",
         "docs-ref-autogen/2.1/**/*.yml": "python",
-        "docs-ref-autogen/latest/**/*.yml": "python",
-        "docs-ref-autogen/2.2/**/*.yml": "python",
-		"docs-ref-autogen/2.3/**/*.yml": "python",
+        "docs-ref-autogen/2.3/**/*.yml": "python",
+        "docs-ref-autogen/2.4/**/*.yml": "python",
         "docs-ref-conceptual/2.0/**/*.md": "python",
         "docs-ref-conceptual/2.1/**/*.md": "python",
-        "docs-ref-conceptual/latest/**/*.md": "python",
-        "docs-ref-conceptual/2.2/**/*.md": "python",
-		"docs-ref-conceptual/2.3/**/*.md": "python"
+        "docs-ref-conceptual/2.3/**/*.md": "python",
+        "docs-ref-conceptual/2.4/**/*.md": "python"
       },
       "ms.date": {
         "docs-ref-autogen/2.0/**/*.yml": "05/31/2017",
         "docs-ref-autogen/2.1/**/*.yml": "07/31/2017",
-        "docs-ref-autogen/latest/**/*.yml": "07/31/2017",
-        "docs-ref-autogen/2.2/**/*.yml": "07/31/2017",
-		"docs-ref-autogen/2.3/**/*.yml": "07/31/2017"
+        "docs-ref-autogen/2.3/**/*.yml": "07/31/2017",
+        "docs-ref-autogen/2.4/**/*.yml": "07/31/2017"
       },
       "ms.service": {
         "docs-ref-autogen/2.0/**/*.yml": "cognitive-toolkit",
         "docs-ref-autogen/2.1/**/*.yml": "cognitive-toolkit",
-        "docs-ref-autogen/latest/**/*.yml": "cognitive-toolkit",
-        "docs-ref-autogen/2.2/**/*.yml": "cognitive-toolkit",
-		"docs-ref-autogen/2.3/**/*.yml": "cognitive-toolkit"
+        "docs-ref-autogen/2.3/**/*.yml": "cognitive-toolkit",
+        "docs-ref-autogen/2.4/**/*.yml": "cognitive-toolkit"
       },
       "ms.topic": {
         "docs-ref-autogen/2.0/**/*.yml": "reference",
         "docs-ref-autogen/2.1/**/*.yml": "reference",
-        "docs-ref-autogen/latest/**/*.yml": "reference",
-        "docs-ref-autogen/2.2/**/*.yml": "reference",
-		"docs-ref-autogen/2.3/**/*.yml": "reference"
+        "docs-ref-autogen/2.3/**/*.yml": "reference",
+        "docs-ref-autogen/2.4/**/*.yml": "reference"
       }
     },
     "template": [],

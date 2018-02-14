@@ -21,9 +21,11 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 104
-  summary: "Attribute for embedding variable\n\ndict\n   The list of vocabulary of\
-    \ the embedding\n\ninput_dim\n   The input dimension of the embedding\n"
+    startLine: 102
+  summary: "Attribute for embedding variable\n   embed is a special trainable parameter\
+    \ that it has a dictionary to match\n   for word w, the embedding is p[dict.index(w),\
+    \ :]\n\ndict\n   The list of vocabulary of the embedding\n\ninput_dim\n   The\
+    \ input dimension of the embedding\n"
   syntax: {}
   type: class
   uid: cntk.contrib.crosstalk.EmbedAttr

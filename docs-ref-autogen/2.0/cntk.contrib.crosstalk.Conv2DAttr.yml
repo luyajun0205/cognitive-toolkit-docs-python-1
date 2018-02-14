@@ -21,7 +21,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\contrib\crosstalk\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 43
+    startLine: 41
   summary: "Attribute for Conv2D variable\n\nfilter_shape\n   The filter shape\n\n\
     num_filters\n   Number of filters\n"
   syntax: {}

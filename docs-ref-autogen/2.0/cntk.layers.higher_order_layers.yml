@@ -89,7 +89,8 @@ items:
         '
       id: constructor
       type:
-      - Python function/lambda with 1 or 0 arguments
+      - Python function/lambda with 1
+      - 0 arguments
     - defaultValue: ''
       id: name
     return:
@@ -146,7 +147,8 @@ items:
         '
       id: f
       type:
-      - "cntk.ops.functions.Function\n or equivalent Python function"
+      - cntk.ops.functions.Function
+      - equivalent Python function
     - defaultValue: ''
       id: name
     return:
@@ -239,7 +241,8 @@ items:
       type:
       - 'list of @cntk.ops.functions.Function
 
-        , equivalent Python functions, tuples of functions, or lists thereof'
+        , equivalent Python functions, tuples of functions,'
+      - lists thereof
     - defaultValue: ''
       id: name
     return:
@@ -286,7 +289,8 @@ items:
         '
       id: functions
       type:
-      - 'single or list of @cntk.ops.functions.Function
+      - single
+      - 'list of @cntk.ops.functions.Function
 
         '
     - defaultValue: ''

@@ -20,9 +20,6 @@ items:
       path: bindings/python/cntk\logging\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
     startLine: 0
-  summary: 'Utilities for logging.
-
-    '
   type: package
   uid: cntk.logging
 - fullName: cntk.logging.get_trace_level
@@ -37,7 +34,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\logging\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 44
+    startLine: 42
   summary: 'Returns current logging verbosity level.
 
     '
@@ -63,7 +60,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\logging\__init__.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 32
+    startLine: 30
   summary: 'Specifies global logging verbosity level.
 
     '

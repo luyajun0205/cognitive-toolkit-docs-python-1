@@ -22,7 +22,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\ops\functions.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 30
+    startLine: 25
   summary: 'Describes different ways how @cntk.ops.functions.Function.clone
 
     works.

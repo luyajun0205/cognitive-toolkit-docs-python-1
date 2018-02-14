@@ -1,0 +1,30 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children: []
+  class: cntk.contrib.crosstalk.FuncInfo
+  fullName: cntk.contrib.crosstalk.FuncInfo
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: builtins.tuple
+    type: cntk.contrib.crosstalk.FuncInfo
+  langs:
+  - python
+  module: cntk.contrib.crosstalk
+  name: FuncInfo
+  source:
+    id: FuncInfo
+    path: bindings/python/cntk\contrib\crosstalk\__init__.py
+    remote:
+      branch: release/2.0
+      path: bindings/python/cntk\contrib\crosstalk\__init__.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 30
+  summary: "Setter/getter functions for a given variable type\n\nsetter\n   The setter\
+    \ function\n\ngetter\n   The getter function\n"
+  syntax: {}
+  type: class
+  uid: cntk.contrib.crosstalk.FuncInfo
+references: []

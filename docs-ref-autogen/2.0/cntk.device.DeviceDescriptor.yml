@@ -18,7 +18,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\device.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 34
+    startLine: 32
   summary: 'Describes a device by a unique id and its type. If the device corresponds
 
     to a GPU its type is 1, otherwise, it is 0
@@ -44,7 +44,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\device.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 40
+    startLine: 38
   summary: 'Returns id of device descriptor
 
     '
@@ -73,7 +73,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\device.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 58
+    startLine: 56
   summary: 'Returns *True* if another CNTK process already holds an exclusive lock
 
     on this device.
@@ -98,7 +98,7 @@ items:
       branch: release/2.0
       path: bindings/python/cntk\device.py
       repo: https://github.com/Microsoft/CNTK.git
-    startLine: 49
+    startLine: 47
   summary: 'Returns type of device descriptor. 1 if it is a GPU device or 0 if CPU.
 
     '
