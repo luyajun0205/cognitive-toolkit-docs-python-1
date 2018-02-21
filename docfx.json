@@ -290,6 +290,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "apiPlatform": "python",
       "breadcrumb_path": "/python/breadcrumb/toc.json",
       "searchScope": [
         "Cognitive Toolkit"
