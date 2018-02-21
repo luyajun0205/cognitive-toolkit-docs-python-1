@@ -294,7 +294,8 @@
       "searchScope": [
         "Cognitive Toolkit"
       ],
-      "showPowerShellPicker": "true"
+      "showPowerShellPicker": "true",
+      "apiPlatform": "python"
     },
     "fileMetadata": {
       "author": {
