@@ -291,7 +291,7 @@
     "externalReference": [],
     "globalMetadata": {
       "apiPlatform": "python",
-      "breadcrumb_path": "/python/breadcrumb/toc.json",
+      "breadcrumb_path": "~/breadcrumb/toc.yml",
       "searchScope": [
         "Cognitive Toolkit"
       ],
