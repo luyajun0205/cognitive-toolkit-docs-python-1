@@ -196,7 +196,7 @@
           "**/*.yml"
         ],
         "src": "breadcrumb",
-        "dest": "breadcrumb",
+        "dest": "cntk_py_breadcrumb",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -291,7 +291,7 @@
     "externalReference": [],
     "globalMetadata": {
       "apiPlatform": "python",
-      "breadcrumb_path": "/python/breadcrumb/toc.json",
+      "breadcrumb_path": "/cntk_py_breadcrumb/toc.json",
       "searchScope": [
         "Cognitive Toolkit"
       ],
