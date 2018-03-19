@@ -1,0 +1,119 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.train.training_session.DataUnit.minibatch
+  - cntk.train.training_session.DataUnit.sample
+  - cntk.train.training_session.DataUnit.sweep
+  class: cntk.train.training_session.DataUnit
+  fullName: cntk.train.training_session.DataUnit
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - type: builtins.object
+      type: builtins.int
+    - inheritance:
+      - type: builtins.object
+      type: enum.Enum
+    type: enum.IntEnum
+  langs:
+  - python
+  module: cntk.train.training_session
+  name: DataUnit
+  source:
+    id: DataUnit
+    path: bindings/python/cntk\train\training_session.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\train\training_session.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 13
+  summary: 'Indicates that whether the processing steps in the training data is counted
+    by samples, minibatch or epoch.
+
+
+
+
+    '
+  syntax: {}
+  type: class
+  uid: cntk.train.training_session.DataUnit
+- class: cntk.train.training_session.DataUnit
+  fullName: cntk.train.training_session.DataUnit.minibatch
+  langs:
+  - python
+  module: cntk.train.training_session
+  name: minibatch
+  source:
+    id: minibatch
+    path: null
+    remote:
+      branch: release/2.5
+      path: null
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: null
+  summary: 'Steps on data are counted by samples.
+
+    '
+  syntax:
+    content: minibatch = 2
+  type: attribute
+  uid: cntk.train.training_session.DataUnit.minibatch
+- class: cntk.train.training_session.DataUnit
+  fullName: cntk.train.training_session.DataUnit.sample
+  langs:
+  - python
+  module: cntk.train.training_session
+  name: sample
+  source:
+    id: sample
+    path: null
+    remote:
+      branch: release/2.5
+      path: null
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: null
+  summary: 'Steps on data are counted by samples.
+
+    '
+  syntax:
+    content: sample = 1
+  type: attribute
+  uid: cntk.train.training_session.DataUnit.sample
+- class: cntk.train.training_session.DataUnit
+  fullName: cntk.train.training_session.DataUnit.sweep
+  langs:
+  - python
+  module: cntk.train.training_session
+  name: sweep
+  source:
+    id: sweep
+    path: null
+    remote:
+      branch: release/2.5
+      path: null
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: null
+  summary: 'Steps on data are counted by sweeps of epochs.
+
+    '
+  syntax:
+    content: sweep = 0
+  type: attribute
+  uid: cntk.train.training_session.DataUnit.sweep
+references:
+- fullName: cntk.train.training_session.DataUnit.minibatch
+  isExternal: false
+  name: minibatch
+  parent: cntk.train.training_session.DataUnit
+  uid: cntk.train.training_session.DataUnit.minibatch
+- fullName: cntk.train.training_session.DataUnit.sample
+  isExternal: false
+  name: sample
+  parent: cntk.train.training_session.DataUnit
+  uid: cntk.train.training_session.DataUnit.sample
+- fullName: cntk.train.training_session.DataUnit.sweep
+  isExternal: false
+  name: sweep
+  parent: cntk.train.training_session.DataUnit
+  uid: cntk.train.training_session.DataUnit.sweep

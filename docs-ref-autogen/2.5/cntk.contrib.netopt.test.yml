@@ -1,0 +1,35 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.netopt.test.factorization_test
+  - cntk.contrib.netopt.test.quantization_test
+  fullName: cntk.contrib.netopt.test
+  langs:
+  - python
+  module: cntk.contrib.netopt.test
+  name: test
+  source:
+    id: test
+    path: bindings/python/cntk\contrib\netopt\test\__init__.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\test\__init__.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 0
+  summary: 'Tests for netowrk optimization alogorithms.
+
+    '
+  type: package
+  uid: cntk.contrib.netopt.test
+references:
+- fullName: cntk.contrib.netopt.test.factorization_test
+  isExternal: false
+  name: factorization_test
+  parent: cntk.contrib.netopt.test
+  uid: cntk.contrib.netopt.test.factorization_test
+- fullName: cntk.contrib.netopt.test.quantization_test
+  isExternal: false
+  name: quantization_test
+  parent: cntk.contrib.netopt.test
+  uid: cntk.contrib.netopt.test.quantization_test

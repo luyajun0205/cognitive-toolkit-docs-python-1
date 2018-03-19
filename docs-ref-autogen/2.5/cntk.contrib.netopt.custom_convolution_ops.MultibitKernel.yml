@@ -1,0 +1,176 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.backward
+  - cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.forward
+  - cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.gradFunc
+  - cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.infer_outputs
+  - cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.multiFunc
+  class: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  inheritance:
+  - inheritance:
+    - inheritance:
+      - inheritance:
+        - inheritance:
+          - type: builtins.object
+          type: cntk.cntk_py.IDictionarySerializable
+        type: cntk.cntk_py.Function
+      type: cntk.ops.functions.Function
+    type: cntk.ops.functions.UserFunction
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: MultibitKernel
+  source:
+    id: MultibitKernel
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 98
+  summary: '
+
+
+
+
+    '
+  syntax:
+    content: MultibitKernel(arg1, arg2, name='MultibitKernel')
+  type: class
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+- class: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.backward
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: backward
+  source:
+    id: backward
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 173
+  syntax:
+    content: backward(state, root_gradients)
+    parameters:
+    - id: self
+    - id: state
+    - id: root_gradients
+  type: method
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.backward
+- class: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.forward
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: forward
+  source:
+    id: forward
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 162
+  syntax:
+    content: forward(argument, device, outputs_to_retain)
+    parameters:
+    - id: self
+    - id: argument
+    - id: device
+    - id: outputs_to_retain
+  type: method
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.forward
+- class: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.gradFunc
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: gradFunc
+  source:
+    id: gradFunc
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 146
+  syntax:
+    content: gradFunc(arg)
+    parameters:
+    - id: self
+    - id: arg
+  type: method
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.gradFunc
+- class: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.infer_outputs
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: infer_outputs
+  source:
+    id: infer_outputs
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 183
+  syntax:
+    content: infer_outputs()
+    parameters:
+    - id: self
+  type: method
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.infer_outputs
+- class: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.multiFunc
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: multiFunc
+  source:
+    id: multiFunc
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 112
+  syntax:
+    content: multiFunc(arg1)
+    parameters:
+    - id: self
+    - id: arg1
+  type: method
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.multiFunc
+references:
+- fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.backward
+  isExternal: false
+  name: backward
+  parent: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.backward
+- fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.forward
+  isExternal: false
+  name: forward
+  parent: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.forward
+- fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.gradFunc
+  isExternal: false
+  name: gradFunc
+  parent: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.gradFunc
+- fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.infer_outputs
+  isExternal: false
+  name: infer_outputs
+  parent: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.infer_outputs
+- fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.multiFunc
+  isExternal: false
+  name: multiFunc
+  parent: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel.multiFunc
