@@ -1,0 +1,197 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.netopt.factorization.dense_factored
+  - cntk.contrib.netopt.factorization.factor_dense
+  - cntk.contrib.netopt.factorization.svd_subprojection
+  fullName: cntk.contrib.netopt.factorization
+  langs:
+  - python
+  module: cntk.contrib.netopt.factorization
+  name: factorization
+  source:
+    id: factorization
+    path: bindings/python/cntk\contrib\netopt\factorization.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\factorization.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 0
+  type: module
+  uid: cntk.contrib.netopt.factorization
+- fullName: cntk.contrib.netopt.factorization.dense_factored
+  langs:
+  - python
+  module: cntk.contrib.netopt.factorization
+  name: dense_factored
+  source:
+    id: dense_factored
+    path: bindings/python/cntk\contrib\netopt\factorization.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\factorization.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 89
+  summary: 'Perform the new model creation using the factored inputs W1 and W2.
+
+    The returend function represents the new model.
+
+    '
+  syntax:
+    content: 'dense_factored(shapes, activation=<cntk.default_options.default_override_or
+      object>, init={''W1'': None, ''W2'': None}, input_rank=None, map_rank=None,
+      bias=<cntk.default_options.default_override_or object>, init_bias=<cntk.default_options.default_override_or
+      object>, name='''')'
+    parameters:
+    - description: 'dimensions of the input matrices.
+
+        '
+      id: shapes
+    - description: 'activation function used for the model.
+
+        '
+      id: activation
+    - defaultValue: '{''W1'': None, ''W2'': None}'
+      description: 'the two matrices corresponding to the factorization.
+
+        '
+      id: init
+    - defaultValue: None
+      description: 'rank of the input tensor.
+
+        '
+      id: input_rank
+    - defaultValue: None
+      description: '???
+
+        '
+      id: map_rank
+    - description: 'bias for the model.
+
+        '
+      id: bias
+    - description: 'initial bias value.
+
+        '
+      id: init_bias
+    - defaultValue: ''
+      description: 'name of the block function that creates the new model.
+
+        '
+      id: name
+    return:
+      description: 'a model that is factored and projected (reduced).
+
+        '
+  type: function
+  uid: cntk.contrib.netopt.factorization.dense_factored
+- fullName: cntk.contrib.netopt.factorization.factor_dense
+  langs:
+  - python
+  module: cntk.contrib.netopt.factorization
+  name: factor_dense
+  source:
+    id: factor_dense
+    path: bindings/python/cntk\contrib\netopt\factorization.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\factorization.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 40
+  summary: 'Reduce the size of a dense model using the provided factor_function
+
+    and the projection_function. filter_function is used to select dense
+
+    layers to apply the reduction. If no factor_function is specified,
+
+    use svd decomposition.
+
+    '
+  syntax:
+    content: factor_dense(model, projection_function=None, filter_function=None, factor_function=None)
+    parameters:
+    - description: 'dense model.
+
+        '
+      id: model
+    - defaultValue: None
+      description: 'determin the new size of the dense model. It can
+
+        be based on the shape of the weight matrix or
+
+        other heuristics.
+
+        factor_function can choose to ignore the value k.
+
+        '
+      id: projection_function
+    - defaultValue: None
+      description: 'filter layers in the model to apply the factorization
+
+        '
+      id: filter_function
+    - defaultValue: None
+      description: 'factor the dense model (e.g. svd)
+
+        '
+      id: factor_function
+    return:
+      description: 'a model that is factored and reduced in size.
+
+        '
+  type: function
+  uid: cntk.contrib.netopt.factorization.factor_dense
+- fullName: cntk.contrib.netopt.factorization.svd_subprojection
+  langs:
+  - python
+  module: cntk.contrib.netopt.factorization
+  name: svd_subprojection
+  source:
+    id: svd_subprojection
+    path: bindings/python/cntk\contrib\netopt\factorization.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\factorization.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 11
+  summary: 'Calculate svd of the matrix and produce a subprojection based on k
+
+    '
+  syntax:
+    content: svd_subprojection(matrix, k)
+    parameters:
+    - description: 'an input matrix
+
+        '
+      id: matrix
+    - description: 'desired rank of the output matrix
+
+        '
+      id: k
+      type:
+      - int
+    return:
+      description: 'two matrices representing the original matrix after svd and
+
+        reducing them based on k.
+
+        '
+  type: function
+  uid: cntk.contrib.netopt.factorization.svd_subprojection
+references:
+- fullName: cntk.contrib.netopt.factorization.dense_factored
+  isExternal: false
+  name: dense_factored
+  parent: cntk.contrib.netopt.factorization
+  uid: cntk.contrib.netopt.factorization.dense_factored
+- fullName: cntk.contrib.netopt.factorization.factor_dense
+  isExternal: false
+  name: factor_dense
+  parent: cntk.contrib.netopt.factorization
+  uid: cntk.contrib.netopt.factorization.factor_dense
+- fullName: cntk.contrib.netopt.factorization.svd_subprojection
+  isExternal: false
+  name: svd_subprojection
+  parent: cntk.contrib.netopt.factorization
+  uid: cntk.contrib.netopt.factorization.svd_subprojection
