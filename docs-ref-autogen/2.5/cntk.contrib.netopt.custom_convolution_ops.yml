@@ -1,0 +1,150 @@
+### YamlMime:UniversalReference
+api_name: []
+items:
+- children:
+  - cntk.contrib.netopt.custom_convolution_ops.CustomMultibit
+  - cntk.contrib.netopt.custom_convolution_ops.CustomMultibitKernel
+  - cntk.contrib.netopt.custom_convolution_ops.CustomPySign
+  - cntk.contrib.netopt.custom_convolution_ops.CustomSign
+  - cntk.contrib.netopt.custom_convolution_ops.Multibit
+  - cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  - cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  - cntk.contrib.netopt.custom_convolution_ops.pySign
+  fullName: cntk.contrib.netopt.custom_convolution_ops
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: custom_convolution_ops
+  source:
+    id: custom_convolution_ops
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 0
+  type: module
+  uid: cntk.contrib.netopt.custom_convolution_ops
+- fullName: cntk.contrib.netopt.custom_convolution_ops.CustomMultibit
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: CustomMultibit
+  source:
+    id: CustomMultibit
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 280
+  syntax:
+    content: CustomMultibit(input, bit_map, mean_bits=None)
+    parameters:
+    - id: input
+    - id: bit_map
+    - defaultValue: None
+      id: mean_bits
+  type: function
+  uid: cntk.contrib.netopt.custom_convolution_ops.CustomMultibit
+- fullName: cntk.contrib.netopt.custom_convolution_ops.CustomMultibitKernel
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: CustomMultibitKernel
+  source:
+    id: CustomMultibitKernel
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 295
+  syntax:
+    content: CustomMultibitKernel(input, bit_map, mean_bits=None)
+    parameters:
+    - id: input
+    - id: bit_map
+    - defaultValue: None
+      id: mean_bits
+  type: function
+  uid: cntk.contrib.netopt.custom_convolution_ops.CustomMultibitKernel
+- fullName: cntk.contrib.netopt.custom_convolution_ops.CustomPySign
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: CustomPySign
+  source:
+    id: CustomPySign
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 277
+  syntax:
+    content: CustomPySign(input)
+    parameters:
+    - id: input
+  type: function
+  uid: cntk.contrib.netopt.custom_convolution_ops.CustomPySign
+- fullName: cntk.contrib.netopt.custom_convolution_ops.CustomSign
+  langs:
+  - python
+  module: cntk.contrib.netopt.custom_convolution_ops
+  name: CustomSign
+  source:
+    id: CustomSign
+    path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+    remote:
+      branch: release/2.5
+      path: bindings/python/cntk\contrib\netopt\custom_convolution_ops.py
+      repo: https://github.com/Microsoft/CNTK.git
+    startLine: 274
+  syntax:
+    content: CustomSign(input)
+    parameters:
+    - id: input
+  type: function
+  uid: cntk.contrib.netopt.custom_convolution_ops.CustomSign
+references:
+- fullName: cntk.contrib.netopt.custom_convolution_ops.CustomMultibit
+  isExternal: false
+  name: CustomMultibit
+  parent: cntk.contrib.netopt.custom_convolution_ops
+  uid: cntk.contrib.netopt.custom_convolution_ops.CustomMultibit
+- fullName: cntk.contrib.netopt.custom_convolution_ops.CustomMultibitKernel
+  isExternal: false
+  name: CustomMultibitKernel
+  parent: cntk.contrib.netopt.custom_convolution_ops
+  uid: cntk.contrib.netopt.custom_convolution_ops.CustomMultibitKernel
+- fullName: cntk.contrib.netopt.custom_convolution_ops.CustomPySign
+  isExternal: false
+  name: CustomPySign
+  parent: cntk.contrib.netopt.custom_convolution_ops
+  uid: cntk.contrib.netopt.custom_convolution_ops.CustomPySign
+- fullName: cntk.contrib.netopt.custom_convolution_ops.CustomSign
+  isExternal: false
+  name: CustomSign
+  parent: cntk.contrib.netopt.custom_convolution_ops
+  uid: cntk.contrib.netopt.custom_convolution_ops.CustomSign
+- fullName: cntk.contrib.netopt.custom_convolution_ops.Multibit
+  isExternal: false
+  name: Multibit
+  parent: cntk.contrib.netopt.custom_convolution_ops
+  uid: cntk.contrib.netopt.custom_convolution_ops.Multibit
+- fullName: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+  isExternal: false
+  name: MultibitKernel
+  parent: cntk.contrib.netopt.custom_convolution_ops
+  uid: cntk.contrib.netopt.custom_convolution_ops.MultibitKernel
+- fullName: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+  isExternal: false
+  name: SignWithEstimation
+  parent: cntk.contrib.netopt.custom_convolution_ops
+  uid: cntk.contrib.netopt.custom_convolution_ops.SignWithEstimation
+- fullName: cntk.contrib.netopt.custom_convolution_ops.pySign
+  isExternal: false
+  name: pySign
+  parent: cntk.contrib.netopt.custom_convolution_ops
+  uid: cntk.contrib.netopt.custom_convolution_ops.pySign
